@@ -1,8 +1,9 @@
-# Personalisierte Modeempfehlungen für H&M-Kunden
+# Primäre Datenanalyse und Empfehlungssystem für H&M-Kunden
 
 ## Einführung
 
-Der Schwerpunkt dieses Projekts liegt auf der Analyse und Vorhersage personalisierter Modeempfehlungen für H&M-Kunden. Die Analyse erfolgt mit Python und umfasst eine umfangreiche explorative Datenanalyse (EDA) und eine anfängliche Datenanalyse (IDA).
+Der Schwerpunkt dieses Projekts liegt auf der primären Datenanalyse und der Entwicklung eines personalisierten Empfehlungssystems für H&M-Kunden. Die Analyse erfolgt mit Python und umfasst eine umfangreiche explorative Datenanalyse (EDA) und eine anfängliche Datenanalyse (IDA).
+
 ## Wie man das Projekt startet
 - Klone das Repository auf deinen lokalen Computer:
 ```sh
