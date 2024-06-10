@@ -1,2 +1,8 @@
-# EDA_IDA_H-M
-This repository contains the Exploratory Data Analysis (EDA) and Initial Data Analysis (IDA) of three datasets provided by H&amp;M: products, customers, and transactions. The analysis is performed using Python.
+# H&M Personalized Fashion Recommendations
+
+This project is focused on analyzing and predicting personalized fashion recommendations for H&M customers. The analysis is performed using Python and includes extensive exploratory data analysis (EDA) and initial data analysis (IDA).
+
+This project is available in two languages:
+
+- [Deutsche README](README_de.md)
+- [Russian README](README_ru.md)
