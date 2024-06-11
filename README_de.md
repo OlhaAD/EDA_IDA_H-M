@@ -58,3 +58,57 @@ print(df_articles.head())
 print(df_customers.head())
 print(df_transactions.head())
 ```
+## Ziele und Aufgaben
+### Ziele
+### Aufgaben
+1. **Daten sammeln und vorverarbeiten**
+2. **Datenvisualisierung**
+3. **Datenanalyse**
+## Detaillierte Methodik
+### Werkzeuge und Bibliotheken
+In diesem Projekt wurden die folgenden Werkzeuge und Bibliotheken verwendet:
+
+- **Python:** Die Hauptprogrammiersprache für Datenanalyse und Modellierung.
+
+- **Pandas:** Bibliothek zur Datenverarbeitung und -analyse. Verwendet für die Arbeit mit DataFrames.
+
+- **NumPy:** Bibliothek zur Arbeit mit Arrays und zur Durchführung numerischer Berechnungen.
+
+- **Seaborn:** Auf matplotlib basierende Bibliothek zur Datenvisualisierung. Verwendet zur Erstellung statistischer Diagramme.
+
+- **Matplotlib:** Die Hauptbibliothek zur Erstellung von Diagrammen und zur Datenvisualisierung.
+
+### Datensammlung und Vorverarbeitung
+**Datenquelle:**
+Die Daten für dieses Projekt stammen von https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data
+
+**Datenbankstruktur:**
+Die Datenbank ist in drei Dateien unterteilt: ArticlesHM, CustomersHM und TransactionsHM.
+
+**ArticlesHM** ist eine Tabelle, die alle Artikel von H&M enthält, mit insgesamt **105 542 Zeilen** und den folgenden Spalten:
+- **article_id:** Artikel-ID, Datentyp - int64
+- **prod_name:** Artikelname, Datentyp - object
+- **product_type_name:** Produkttypname, Datentyp - object
+- **product_group_name:** Produktgruppenname, Datentyp - object
+- **graphical_appearance_name:** Name des grafischen Erscheinungsbildes, Datentyp - object
+- **colour_group_name:** Farbgruppenname, Datentyp - object
+- **index_name:** Name des Unterabschnitts, Datentyp - object
+- **index_group_name:** Name des Abschnitts, Datentyp - object
+- **section_name:** Sektionsname, Datentyp - object
+- **garment_group_name:** Kategorie, Datentyp - object
+- **detail_desc:** Details, Datentyp - object
+
+**CustomersHM** ist eine Tabelle, die Informationen über H&M-Kunden enthält, mit insgesamt **1 371 979 Zeilen** und den folgenden Spalten:
+- **customer_id:** Kunden-ID, Datentyp - object
+- **Active:** Aktivitätsstatus, Datentyp - float64
+- **club_member_status:** Clubmitgliedsstatus, Datentyp - object
+- **fashion_news_frequency:** Häufigkeit der Modenachrichten, Datentyp - object
+- **age:** Alter des Kunden, Datentyp - float64
+- **postal_code:** Postleitzahl, Datentyp - object
+
+**TransactionsHM** ist eine Tabelle, die Informationen über H&M-Verkäufe enthält, mit insgesamt **31 788 323 Zeilen** und den folgenden Spalten:
+- **t_dat:** Verkaufsdatum, Datentyp - object
+- **customer_id:** Kunden-ID, Datentyp - object
+- **article_id:** Artikel-ID, Datentyp - int64
+- **price:** Preis, Datentyp - float64
+- **sales_channel_id:** Vertriebskanal, Datentyp - int64
