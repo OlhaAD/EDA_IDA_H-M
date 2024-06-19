@@ -59,8 +59,9 @@ print(df_transactions.head())
 ### Цели
 ### Задачи
 1. **Сбор и предобработка данных**
-2.  **Визуализация данных**
-3.  **Анализ данных**
+2. **Анализ данных**
+3.  **Визуализация данных**
+4.  
 ## Подробная методология
 ### Инструменты и библиотеки
 
@@ -74,6 +75,12 @@ print(df_transactions.head())
 - **Seaborn:** Библиотека для визуализации данных, основанная на matplotlib. Использовалась для создания статистических графиков.
 
 - **Matplotlib:** Основная библиотека для создания графиков и визуализации данных.
+  
+- **Squarify:** Библиотека для создания трематических диаграмм (treemaps).
+
+- **textwrap:** Библиотека для оборачивания текста в строках, чтобы текст помещался в заданные границы.
+
+- **Plotly:** Библиотека для интерактивной визуализации данных.
 
 ### Сбор и предобработка данных
 **Источник данных:**
@@ -108,3 +115,179 @@ print(df_transactions.head())
   - **article_id:** id товара, тип данных - int64
   - **price :** цена товара, тип данных - float64
   - **sales_channel_id:** канал продажи, тип данных - int64
+
+**Примеры данных**
+Группы продуктов:
+```python
+product_group_name
+Garment Upper body       42741
+Garment Lower body       19812
+Garment Full body        13292
+Accessories              11158
+Underwear                 5490
+Shoes                     5283
+Swimwear                  3127
+Socks & Tights            2442
+Nightwear                 1899
+Unknown                    121
+Underwear/nightwear         54
+Cosmetic                    49
+Bags                        25
+Items                       17
+Furniture                   13
+Garment and Shoe care        9
+Stationery                   5
+Interior textile             3
+Fun                          2
+```
+Примеры типов продуктов в группе "Accessories":
+```python
+product_group_name     product_type_name       
+Accessories            Accessories set                 7
+                       Alice band                      6
+                       Baby Bib                        3
+                       Bag                          1280
+                       Beanie                         56
+                       Belt                          458
+                       Bracelet                      180
+                       Braces                          3
+                       Bucket hat                      7
+                       Cap                            13
+                       Cap/peaked                    573
+                       Dog Wear                       20
+                       Earring                      1159
+                       Earrings                       11
+                       Eyeglasses                      2
+                       Felt hat                       10
+                       Giftbox                        15
+                       Gloves                        367
+                       Hair clip                     244
+                       Hair string                   238
+                       Hair ties                      24
+                       Hair/alice band               854
+                       Hairband                        2
+                       Hat/beanie                   1349
+                       Hat/brim                      396
+                       Headband                        1
+                       Necklace                      581
+                       Other accessories            1034
+                       Ring                          240
+                       Scarf                        1013
+                       Soft Toys                      46
+                       Straw hat                       6
+                       Sunglasses                    621
+                       Tie                           141
+                       Umbrella                       26
+                       Wallet                         77
+                       Watch                          73
+                       Waterbottle                    22
+```
+Секции продуктов и их категории
+```python
+index_group_name  index_name                      section_name                  
+Baby/Children     Baby Sizes 50-98                Baby Boy                          1717
+                                                  Baby Essentials & Complements     4932
+                                                  Baby Girl                         1760
+                                                  Kids & Baby Shoes                  457
+                                                  Kids Local Relevance                 9
+                  Children Accessories, Swimwear  Kids & Baby Shoes                 1685
+                                                  Kids Accessories, Swimwear & D    1731
+                                                  Kids Outerwear                    1199
+                  Children Sizes 134-170          Boys Underwear & Basics            842
+                                                  Girls Underwear & Basics          1485
+                                                  Kids Outerwear                     636
+                                                  Young Boy                         2352
+                                                  Young Girl                        3899
+                  Children Sizes 92-140           Boys Underwear & Basics           1192
+                                                  Girls Underwear & Basics          2005
+                                                  Kids Boy                          3328
+                                                  Kids Girl                         4469
+                                                  Kids Local Relevance               183
+                                                  Kids Outerwear                     830
+Divided           Divided                         Divided Accessories               1732
+                                                  Divided Asia keys                  280
+                                                  Divided Basics                    1723
+                                                  Divided Collection                7124
+                                                  Divided Complements Other           35
+                                                  Divided Projects                  2364
+                                                  Divided Selected                   991
+                                                  EQ Divided                          26
+                                                  Ladies Denim                       874
+Ladieswear        Ladies Accessories              Womens Big accessories            1665
+                                                  Womens Shoes                      2026
+                                                  Womens Small accessories          3270
+                  Ladieswear                      Collaborations                     559
+                                                  H&M+                              2337
+                                                  Ladies Denim                       227
+                                                  Ladies Other                         4
+                                                  Mama                              2266
+                                                  Special Collections                682
+                                                  Womens Casual                     2725
+                                                  Womens Everyday Basics            1581
+                                                  Womens Everyday Collection        7295
+                                                  Womens Jackets                     829
+                                                  Womens Nightwear, Socks & Tigh     228
+                                                  Womens Premium                    1270
+                                                  Womens Tailoring                  3376
+                                                  Womens Trend                      2622
+                  Lingeries/Tights                Womens Lingerie                   3598
+                                                  Womens Nightwear, Socks & Tigh    1338
+                                                  Womens Swimwear, beachwear        1839
+Menswear          Menswear                        Contemporary Casual               1560
+                                                  Contemporary Smart                1778
+                                                  Contemporary Street               1490
+                                                  Denim Men                          521
+                                                  Men Accessories                   1337
+                                                  Men Edition                        330
+                                                  Men Other                           25
+                                                  Men Other 2                        190
+                                                  Men Project                        298
+                                                  Men Shoes                          645
+                                                  Men Suits & Tailoring             1428
+                                                  Men Underwear                     2322
+                                                  Mens Outerwear                     629
+Sport             Sport                           Kids Sports                        626
+                                                  Ladies H&M Sport                  1894
+                                                  Men H&M Sport                      872
+```
+### Анализ и визуализация данных
+
+**Распределение товаров по группам продуктов**
+
+Всего база данных содержит 19 групп продуктов. Наибольшее количество товаров принадлежит группе "Garment Upper body", что составляет 40.5% всех товаров. Самые малочисленные группы: 'Nightwear', 'Unknown', 'Underwear/nightwear', 
+'Cosmetic', 'Bags', 'Items', 'Furniture', 'Garment and Shoe care', 'Stationery', 'Interior textile', 'Fun'. Все малочисленные группы отображены в "Other" на визуализации.
+![Разделение на различные группы товаров](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductGroupPie.png)
+
+ **Распределение товаров по типам продуктов внутри каждой группы**
+ 
+Каждая из 19 групп имеет дополнительно разделение по типам продуктов. Больше всего различных типов продуктов находится в группе "Accessories". Примеры типов продуктов в группе "Accessories" представлен в разделе выше. Распределение трех самых больших групп "Garment Full body", "Garment Lower body" и "Garment Upper body" по типам продуктов показано на столбчатой диаграмме ниже.
+![РаспределениеПоТипамПродуктовДляТрехГруппТоваров](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductTypesIn3Groups.png)
+
+**Распределение товаров по типам принтов**
+
+Анализ типов принтов показывает, какие принты наиболее распространены среди товаров. Всего база данных содержит 30 разных принтов. Из диаграммы видно, что самый популярный принт - "Solid", который составляет 47.1% всех товаров. Самые редкие принты объединены в группу "Other".
+![РаспределениеПоТипуПринтов](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductDruckePie.png)
+
+**Распределение товаров по цвету**
+
+Из 50 различных цветов самым распространенным является черный цвет. Для лучшей наглядности следующей визуализации был создан словарь цветов и использована библиотека squarify.
+![РаспределениеТоваровПоЦветам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductColorsTreemap.png)
+
+**Распределение товаров по категориям**
+
+Еще одна важная визуализация показывает, как товары распределены по категориям. Это помогает понять, какие категории более популярны. Из диаграммы видно, что группа "Ladieswear" составляет наибольшую долю, равную 24.6%. Вторая по величине категория "Divided" это молодежная и более дешевая одежда.
+![РаспределениеТоваровПоКатегориям](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductIndexPie.png)
+
+**Распределение товаров по секциям внутри категорий**
+Дополнительно каждая категория разделяется на подкатегории и каждая подкатегория содержит секции товаров. 
+
+### Результаты и выводы
+
+На основании анализа данных можно сделать следующие выводы:
+- Наибольшее количество товаров принадлежит группе "Garment Upper body".
+- Товары также разделены на секции и категории, что позволяет более детально анализировать ассортимент.
+- Самая крупная группа по типу товаров это брюки "Trousers", более 11169, за ними идут платья "Dresses" 10362.
+- Самый распространенный цвет товаров - черный "Black": 22670 наименований, а самый распространенный принт - однотонный "Solid": 49747 позиций.
+
+### Заключение
+Этот проект предоставляет первичный анализ данных и систему персонализированных рекомендаций для клиентов H&M.
