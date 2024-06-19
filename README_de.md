@@ -62,8 +62,9 @@ print(df_transactions.head())
 ### Ziele
 ### Aufgaben
 1. **Daten sammeln und vorverarbeiten**
-2. **Datenvisualisierung**
-3. **Datenanalyse**
+2. **Datenanalyse**
+3. **Datenvisualisierung**
+4. 
 ## Detaillierte Methodik
 ### Werkzeuge und Bibliotheken
 In diesem Projekt wurden die folgenden Werkzeuge und Bibliotheken verwendet:
@@ -77,6 +78,12 @@ In diesem Projekt wurden die folgenden Werkzeuge und Bibliotheken verwendet:
 - **Seaborn:** Auf matplotlib basierende Bibliothek zur Datenvisualisierung. Verwendet zur Erstellung statistischer Diagramme.
 
 - **Matplotlib:** Die Hauptbibliothek zur Erstellung von Diagrammen und zur Datenvisualisierung.
+
+- **Squarify:** Eine Bibliothek zur Erstellung von Treemap-Diagrammen.
+
+- **textwrap:** Eine Bibliothek zum Umbruch von Textzeilen, damit der Text in die angegebenen Grenzen passt.
+
+- **Plotly:** Eine Bibliothek für interaktive Datenvisualisierung.
 
 ### Datensammlung und Vorverarbeitung
 **Datenquelle:**
@@ -98,6 +105,155 @@ Die Datenbank ist in drei Dateien unterteilt: ArticlesHM, CustomersHM und Transa
 - **garment_group_name:** Kategorie, Datentyp - object
 - **detail_desc:** Details, Datentyp - object
 
+**CustomersHM** ist eine Tabelle, die Informationen über H&M-Kunden enthält, mit insgesamt **1 371 979 Zeilen** und den folgenden Spalten:
+- **customer_id:** Kunden-ID, Datentyp - object
+- **Active:** Aktivitätsstatus, Datentyp - float64
+- **club_member_status:** Clubmitgliedsstatus, Datentyp - object
+- **fashion_news_frequency:** Häufigkeit der Modenachrichten, Datentyp - object
+- **age:** Alter des Kunden, Datentyp - float64
+- **postal_code:** Postleitzahl, Datentyp - object
+
+**TransactionsHM** ist eine Tabelle, die Informationen über H&M-Verkäufe enthält, mit insgesamt **31 788 323 Zeilen** und den folgenden Spalten:
+- **t_dat:** Verkaufsdatum, Datentyp - object
+- **customer_id:** Kunden-ID, Datentyp - object
+- **article_id:** Artikel-ID, Datentyp - int64
+- **price:** Preis, Datentyp - float64
+- **sales_channel_id:** Vertriebskanal, Datentyp - int64
+
+**Datenbeispiele**
+Produktgruppen:
+```python
+product_group_name
+Garment Upper body       42741
+Garment Lower body       19812
+Garment Full body        13292
+Accessories              11158
+Underwear                 5490
+Shoes                     5283
+Swimwear                  3127
+Socks & Tights            2442
+Nightwear                 1899
+Unknown                    121
+Underwear/nightwear         54
+Cosmetic                    49
+Bags                        25
+Items                       17
+Furniture                   13
+Garment and Shoe care        9
+Stationery                   5
+Interior textile             3
+Fun                          2
+```
+Beispiele für Produkttypen in der Gruppe "Accessories":
+```python
+product_group_name     product_type_name       
+Accessories            Accessories set                 7
+                       Alice band                      6
+                       Baby Bib                        3
+                       Bag                          1280
+                       Beanie                         56
+                       Belt                          458
+                       Bracelet                      180
+                       Braces                          3
+                       Bucket hat                      7
+                       Cap                            13
+                       Cap/peaked                    573
+                       Dog Wear                       20
+                       Earring                      1159
+                       Earrings                       11
+                       Eyeglasses                      2
+                       Felt hat                       10
+                       Giftbox                        15
+                       Gloves                        367
+                       Hair clip                     244
+                       Hair string                   238
+                       Hair ties                      24
+                       Hair/alice band               854
+                       Hairband                        2
+                       Hat/beanie                   1349
+                       Hat/brim                      396
+                       Headband                        1
+                       Necklace                      581
+                       Other accessories            1034
+                       Ring                          240
+                       Scarf                        1013
+                       Soft Toys                      46
+                       Straw hat                       6
+                       Sunglasses                    621
+                       Tie                           141
+                       Umbrella                       26
+                       Wallet                         77
+                       Watch                          73
+                       Waterbottle                    22
+```
+Produktbereiche und ihre Kategorien
+```python
+index_group_name  index_name                      section_name                  
+Baby/Children     Baby Sizes 50-98                Baby Boy                          1717
+                                                  Baby Essentials & Complements     4932
+                                                  Baby Girl                         1760
+                                                  Kids & Baby Shoes                  457
+                                                  Kids Local Relevance                 9
+                  Children Accessories, Swimwear  Kids & Baby Shoes                 1685
+                                                  Kids Accessories, Swimwear & D    1731
+                                                  Kids Outerwear                    1199
+                  Children Sizes 134-170          Boys Underwear & Basics            842
+                                                  Girls Underwear & Basics          1485
+                                                  Kids Outerwear                     636
+                                                  Young Boy                         2352
+                                                  Young Girl                        3899
+                  Children Sizes 92-140           Boys Underwear & Basics           1192
+                                                  Girls Underwear & Basics          2005
+                                                  Kids Boy                          3328
+                                                  Kids Girl                         4469
+                                                  Kids Local Relevance               183
+                                                  Kids Outerwear                     830
+Divided           Divided                         Divided Accessories               1732
+                                                  Divided Asia keys                  280
+                                                  Divided Basics                    1723
+                                                  Divided Collection                7124
+                                                  Divided Complements Other           35
+                                                  Divided Projects                  2364
+                                                  Divided Selected                   991
+                                                  EQ Divided                          26
+                                                  Ladies Denim                       874
+Ladieswear        Ladies Accessories              Womens Big accessories            1665
+                                                  Womens Shoes                      2026
+                                                  Womens Small accessories          3270
+                  Ladieswear                      Collaborations                     559
+                                                  H&M+                              2337
+                                                  Ladies Denim                       227
+                                                  Ladies Other                         4
+                                                  Mama                              2266
+                                                  Special Collections                682
+                                                  Womens Casual                     2725
+                                                  Womens Everyday Basics            1581
+                                                  Womens Everyday Collection        7295
+                                                  Womens Jackets                     829
+                                                  Womens Nightwear, Socks & Tigh     228
+                                                  Womens Premium                    1270
+                                                  Womens Tailoring                  3376
+                                                  Womens Trend                      2622
+                  Lingeries/Tights                Womens Lingerie                   3598
+                                                  Womens Nightwear, Socks & Tigh    1338
+                                                  Womens Swimwear, beachwear        1839
+Menswear          Menswear                        Contemporary Casual               1560
+                                                  Contemporary Smart                1778
+                                                  Contemporary Street               1490
+                                                  Denim Men                          521
+                                                  Men Accessories                   1337
+                                                  Men Edition                        330
+                                                  Men Other                           25
+                                                  Men Other 2                        190
+                                                  Men Project                        298
+                                                  Men Shoes                          645
+                                                  Men Suits & Tailoring             1428
+                                                  Men Underwear                     2322
+                                                  Mens Outerwear                     629
+Sport             Sport                           Kids Sports                        626
+                                                  Ladies H&M Sport                  1894
+                                                  Men H&M Sport                      872
+```
 **CustomersHM** ist eine Tabelle, die Informationen über H&M-Kunden enthält, mit insgesamt **1 371 979 Zeilen** und den folgenden Spalten:
 - **customer_id:** Kunden-ID, Datentyp - object
 - **Active:** Aktivitätsstatus, Datentyp - float64
