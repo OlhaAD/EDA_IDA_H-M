@@ -268,3 +268,52 @@ Sport             Sport                           Kids Sports                   
 - **article_id:** Artikel-ID, Datentyp - int64
 - **price:** Preis, Datentyp - float64
 - **sales_channel_id:** Vertriebskanal, Datentyp - int64
+
+### Analyse und Visualisierung der Daten
+
+**Verteilung der Produkte nach Produktgruppen**
+
+Die Datenbank enthält insgesamt 19 Produktgruppen. Die größte Anzahl an Produkten gehört zur Gruppe "Garment Upper body", die 40,5% aller Produkte ausmacht. Die am wenigsten vertretenen Gruppen sind: 'Nightwear', 'Unknown', 'Underwear/nightwear', 'Cosmetic', 'Bags', 'Items', 'Furniture', 'Garment and Shoe care', 'Stationery', 'Interior textile', 'Fun'. Alle kleineren Gruppen sind in der Visualisierung unter "Other" zusammengefasst.
+
+![VerteilungProdukteNachProduktgruppen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductGroupPie.png)
+
+**Verteilung der Produkte nach Produkttypen innerhalb jeder Gruppe**
+
+Jede der 19 Gruppen hat zusätzlich eine Unterteilung nach Produkttypen. Die Gruppe "Accessories" hat die meisten verschiedenen Produkttypen. Beispiele für Produkttypen in der Gruppe "Accessories" sind im oberen Abschnitt dargestellt. Die Verteilung der drei größten Gruppen "Garment Full body", "Garment Lower body" und "Garment Upper body" nach Produkttypen ist im untenstehenden Balkendiagramm dargestellt.
+
+![VerteilungProdukteNachProdukttypenInnerhalbJederGruppe](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductTypesIn3Groups.png)
+
+**Verteilung der Produkte nach Drucktypen**
+
+Die Analyse der Drucktypen zeigt, welche Drucke unter den Produkten am häufigsten vorkommen. Die Datenbank enthält insgesamt 30 verschiedene Drucktypen. Aus dem Diagramm geht hervor, dass der beliebteste Druck "Solid" ist, der 47,1% aller Produkte ausmacht. Die seltensten Drucktypen sind in der Gruppe "Other" zusammengefasst.
+
+![VerteilungProdukteNachDrucktypen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductDruckePie.png)
+
+
+**Verteilung der Produkte nach Farben**
+
+Von den 50 verschiedenen Farben ist Schwarz die am häufigsten vorkommende Farbe. Für eine bessere Übersichtlichkeit der folgenden Visualisierung wurde ein Farblexikon erstellt und die Bibliothek Squarify verwendet.
+
+![VerteilungProdukteNachFarben](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductColorsTreemap.png)
+
+**Verteilung der Produkte nach Abteilungen**
+
+Eine weitere wichtige Visualisierung zeigt, wie die Produkte auf die verschiedenen Abteilungen verteilt sind. Dies hilft zu verstehen, welche Produkte beliebter sind. Aus dem Diagramm geht hervor, dass die Abteilung "Ladieswear" mit einem Anteil von 24,6% den größten Teil ausmacht. Die zweitgrößte Abteilung "Divided" umfasst jugendliche und preisgünstigere Kleidung.
+
+![VerteilungProdukteNachAbteilungen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductIndexPie.png)
+
+**Verteilung der Produkte nach Sektionen und Abteilungen innerhalb der Abteilungsgruppen**
+
+Zusätzlich sind einige Abteilungen in Gruppen zusammengefasst, und jede Abteilung enthält Produktsektionen. Im Abschnitt "Datenbankstruktur" ist ein Beispiel für die Daten in Form einer Liste aller Sektionen mit ihrer Unterteilung nach Abteilungen und Abteilungsgruppen dargestellt. Unten ist ein Sunburst-Diagramm dargestellt, das diese Aufteilung visualisiert.
+
+![VerteilungProdukteNachSektionenUndAbteilungenInnerhalbAbteilungsgruppen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductSectionsInCategories.png)
+
+**Verteilung der Produkte nach Sektionen und Kategorien innerhalb der Abteilungsgruppe "Ladieswear"**
+
+Aus dem obigen Diagramm sehen wir, dass nur zwei Abteilungsgruppen eine weitere Unterteilung in mehrere Kategorien haben, von denen jede ihre eigenen Sektionen hat. Diese Abteilungsgruppen sind "Ladieswear" und "Baby/Children". Diese beiden Abteilungsgruppen sind jeweils separat visualisiert.
+
+![VerteilungProdukteNachSektionenUndKategorienInnerhalbAbteilungsgruppeLadieswear](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductSectionsInLadieswear.png)
+
+**Verteilung der Produkte nach Sektionen und Kategorien innerhalb der Abteilungsgruppe "Baby/Children"**
+
+![VerteilungProdukteNachSektionenUndKategorienInnerhalbAbteilungsgruppeBabyChildren](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductSectionsInBaby_Children.png)
