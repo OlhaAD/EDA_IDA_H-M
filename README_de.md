@@ -317,3 +317,44 @@ Aus dem obigen Diagramm sehen wir, dass nur zwei Abteilungsgruppen eine weitere 
 **Verteilung der Produkte nach Sektionen und Kategorien innerhalb der Abteilungsgruppe "Baby/Children"**
 
 ![VerteilungProdukteNachSektionenUndKategorienInnerhalbAbteilungsgruppeBabyChildren](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductSectionsInBaby_Children.png)
+
+**Verteilung der Produkte nach Kategorien**
+
+Wir sehen, dass die größte Kategorie "Jersey Fancy" ist, gefolgt von der Kategorie "Accessories".
+
+![VerteilungProdukteNachKategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ProductGarmentPie.png)
+
+**Verteilung der Kunden nach ihrem Clubstatus**
+
+Die Mehrheit der Kunden sind Clubmitglieder (92.7%), etwa 6.8% befinden sich im Prozess der Clubmitgliedschaft, und ein sehr kleiner Teil — 0.0003% (467 Kunden) hat den Club verlassen. Diese Gruppe wurde zusammen mit den unbestimmten Werten in die Kategorie "Other" aufgenommen.
+
+![VerteilungKundenNachIhremClubstatus](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ClubStatusClientPie.png)
+
+**Analyse der Häufigkeit des Versands von Nachrichten an Kunden**
+
+Etwas mehr als ein Drittel der Kunden (34.8%) sind für regelmäßige Nachrichten angemeldet, 0.1% erhalten Nachrichten monatlich. Der Großteil der Kunden (65.1%) hat überhaupt kein Abonnement. Dies ist ein bedeutender Anteil, und es sollten Schritte unternommen werden, um diesen Anteil zu verringern. Wichtig ist, dass die Nachrichten nicht zu Spam werden, sondern moderelevante Inhalte enthalten, die Interesse wecken, die Website des Unternehmens besuchen und idealerweise Käufe tätigen.
+
+![AnalyseDerHäufigkeitDesVersandsVonNachrichtenAnKunden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/FashionNewsFrequencytPie.png)
+
+**Visualisierung der Altersverteilung der Kunden**
+
+Das Histogramm zeigt zwei Haupt-Altersspitzen unter den Käufern:
+
+- Der erste Gipfel liegt bei etwa 21 Jahren.
+- Der zweite Gipfel liegt bei etwa 50 Jahren.
+
+Es ist auch ein Rückgang der Aktivität im Bereich um die 40 Jahre zu erkennen. Dies könnte ein interessanter Bereich für eine detaillierte Analyse sein. Zum Beispiel sollte untersucht werden, welche Produktgruppen diese Altersgruppe kauft, zu welcher Zeit sie einkaufen und wie oft sie Newsletter erhalten. Das Verständnis dieser Faktoren kann helfen, die Gründe für den Rückgang der Aktivität in dieser Altersgruppe zu erkennen.
+
+Darüber hinaus zeigt das Histogramm einen recht langen Schwanz in Richtung der älteren Kunden, was auf eine beträchtliche Anzahl älterer Käufer hinweist. Dies ist bei der Entwicklung von Marketingstrategien wichtig zu berücksichtigen, da sie eine bedeutende Kundengruppe darstellen.
+
+![AltersverteilungDerKundenMithilfeHistogramm](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ClientsAgeHistogramm.png)
+
+Das Boxplot zeigt:
+
+- Der Median des Altersverteilung liegt bei 31 Jahren, was darauf hinweist, dass die Hauptgruppe der Kunden jung ist.
+- Das erste Quartil (25%) umfasst die Altersgruppe von 24 bis 31 Jahren.
+- Das dritte Quartil (75%) umfasst die Altersgruppe von 31 bis 49 Jahren, was deutlich breiter ist als die Altersgruppe des zweiten Quartils.
+
+Diese Analyse unterstreicht erneut die Bedeutung der Kunden im dritten Quartil und die Notwendigkeit zusätzlicher Analysen und Maßnahmen seitens des Unternehmens, um die Bedürfnisse dieser Gruppe zu erfüllen.
+
+![AltersverteilungDerKundenMithilfeBoxplot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ClientsAgeBoxPlot.png)
