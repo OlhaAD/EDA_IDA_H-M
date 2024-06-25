@@ -358,3 +358,29 @@ Das Boxplot zeigt:
 Diese Analyse unterstreicht erneut die Bedeutung der Kunden im dritten Quartil und die Notwendigkeit zusätzlicher Analysen und Maßnahmen seitens des Unternehmens, um die Bedürfnisse dieser Gruppe zu erfüllen.
 
 ![AltersverteilungDerKundenMithilfeBoxplot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ClientsAgeBoxPlot.png)
+
+**Verteilung der Nachrichtensendehäufigkeit nach Altersquantilen**
+
+Das vorherige Boxplot-Diagramm zeigte die Notwendigkeit einer zusätzlichen Analyse der Kunden nach Altersquantilen. Insbesondere interessiert uns das dritte Quartil und der Aktivitätsrückgang dieser Altersgruppe. Im folgenden Balkendiagramm sehen wir, dass alle Gruppen ungefähr gleich verteilt sind, mit geringfügigen Unterschieden.
+
+Der niedrigste Prozentsatz an Newsletter-Abonnements ist in der aktivsten Kundengruppe im Alter von 24-31 Jahren zu beobachten. Es lohnt sich, zusätzlich mit dieser Gruppe zu arbeiten, um ihr Interesse an Abonnementmaterialien zu erhöhen und die Bedürfnisse dieser Gruppe genauer zu untersuchen. Dies gilt auch für die Kunden des dritten Quartils.
+
+![VerteilungNachrichtensendehäufigkeitNachAltersquantilen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/FashionNewsFrequencyAgeQuartile.png)
+
+**Verteilung des Aktivitätsstatus nach Altersquantilen**
+
+Das folgende Diagramm zeigt die Verteilung der aktiven Kunden nach Altersquantilen. Es ist zu erkennen, dass der Prozentsatz der aktiven Kunden ebenfalls relativ gleichmäßig auf alle Quartile verteilt ist, obwohl es immer noch kleine Unterschiede gibt, die untersucht und genutzt werden können, um die Aktivität in jeder Altersgruppe zu steigern.
+
+![VerteilungAktivitätsstatusNachAltersquantilen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/ActiveStatusAgeQuartile.png)
+
+**Verteilung der Kunden nach Postleitzahl**
+
+Wir sehen, dass sehr viele Kunden die gleiche Postleitzahl haben. Ich gehe davon aus, dass dieser Index nichts mit dem physischen Index der Kunden zu tun hat und höchstwahrscheinlich der Index eines Paketterminals oder einer Lieferstelle für große Bestellungen ist
+
+| Index  | Postal Code                                                      | Counts |
+|--------|------------------------------------------------------------------|--------|
+| 61034  | 2c29ae653a9282cce4151bd87643c907644e09541abc28ae87dea0d1f6603b1c | 120303 |
+| 281937 | cc4ed85e30f4977dae47662ddc468cd2eec11472de6fac                   | 261    |
+| 156090 | 714976379549eb90aae4a71bca6c7402cc646ae7c40f6c                   | 159    |
+| 171208 | 7c1fa3b0ec1d37ce2c3f34f63bd792f3b4494f324b6be5                   | 157    |
+| 126228 | 5b7eb31eabebd3277de632b82267286d847fd5d44287ee                   | 156    |
