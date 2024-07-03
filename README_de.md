@@ -122,6 +122,16 @@ Die Datenbank ist in drei Dateien unterteilt: ArticlesHM, CustomersHM und Transa
 
 #### Datenoptimierung
 
+Der DataFrame **df_articles** erfordert die folgende Optimierung:
+
+1. **Umwandlung der Spalte `article_id` in `int32`:**
+    - Reduzierung des Speicherplatzbedarfs durch Verwendung eines 32-Bit-Ganzzahltyps anstelle eines 64-Bit-Typs. Dies spart Speicherplatz bei der Speicherung von Ganzzahldaten. Der minimale Wert von article_id beträgt 108 775 015 und der maximale Wert 959 461 001, was innerhalb des Bereichs von int32 (-2 147 483 648 bis 2 147 483 647) liegt.
+
+2. **Umwandlung aller zehn stringbasierten Spalten prod_name, `prod_name`, `product_type_name`, `product_group_name`, `graphical_appearance_name`, `colour_group_name`, `index_name`, `index_group_name`, `section_name`, `garment_group_name`, `detail_desc` von `object` in `category`:**
+    - Spalten mit Textwerten können viel Speicherplatz beanspruchen. Wenn die Spalten wie in unserem Fall wiederholte Werte enthalten, ist es besser, sie in kategorische Daten umzuwandeln, um den Speicherplatzbedarf zu verringern.
+   
+Diese Umwandlungen haben den Speicherplatzbedarf des DataFrames `df_article` von **8,9 MB** vor der Optimierung auf **4,8 MB** nach der Optimierung reduziert. Dies wird die Leistung bei der Arbeit mit diesem DataFrame erheblich verbessern.
+
 Der DataFrame **df_transactions** stellt ein sehr großes Informationsvolumen dar und erfordert daher die folgende zusätzliche Optimierung:
 
 1. **Umwandlung der Spalte `t_dat` in `datetime64[ns]`:**
