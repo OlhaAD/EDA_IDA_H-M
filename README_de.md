@@ -132,6 +132,22 @@ Der DataFrame **df_articles** erfordert die folgende Optimierung:
    
 Diese Umwandlungen haben den Speicherplatzbedarf des DataFrames `df_article` von **8,9 MB** vor der Optimierung auf **4,8 MB** nach der Optimierung reduziert. Dies wird die Leistung bei der Arbeit mit diesem DataFrame erheblich verbessern.
 
+Der DataFrame **df_customers** erfordert die folgende Optimierung:
+
+1. **Umwandlung der Spalte `Active` von `float64` in `bool`:**
+    - Wir haben festgestellt, dass `Active` nur einen Wert von 1 annimmt, während die meisten anderen Werte NaN sind. Daher ist die Umwandlung dieser Spalte von float64 in bool gerechtfertigt und ermöglicht eine erhebliche Optimierung unserer Daten.
+
+2. **Umwandlung der Spalte `customer_id` von `object` in den kategorialen Datentyp (`category`):**
+    - Diese Umwandlung ist erforderlich, um unsere Daten mit df_transactions zu synchronisieren, in dem die customer_id in den kategorialen Datentyp umgewandelt wurde, um den Speicherbedarf erheblich zu reduzieren.
+
+3. **Umwandlung der Spalten `club_member_status` und `fashion_news_frequency` von `object` in den kategorialen Datentyp (`category`):**
+    - Beide Spalten nehmen eine begrenzte Anzahl von Werten an, nämlich jeweils 3. `fashion_news_frequency` kann die Werte 'NONE', 'Regularly', 'Monthly' und `club_member_status` die Werte 'ACTIVE', 'PRE-CREATE', 'LEFT CLUB' haben. Daher ist die Umwandlung von object in diesem Fall notwendig.
+
+4. **Umwandlung der Spalte `age` von `float64` in `uint8`:**
+    - Die Spalte `age` nimmt Werte von 0 bis 99 an, daher ist die Umwandlung in den Datentyp uint8, der Werte im Bereich von 0 bis 255 verwendet, sinnvoll.
+
+Der Vergleich verschiedener Optimierungsansätze zeigte, dass die Umwandlung aller stringbasierten Spalten in kategoriale Daten (category) nicht immer zu einer erheblichen Verringerung des Speicherbedarfs führt. Manchmal kann die Verwendung von object für einige Spalten effizienter sein, und deshalb wurde der Datentyp der Spalte `postal_code` nicht geändert, da die Verwendung des object-Typs in diesem Fall optimal war. Insgesamt haben die Umwandlungen dazu geführt, dass der Speicherbedarf des DataFrame df_customers von **62.8 MB** vor der Optimierung auf **63.7 MB** nach der Optimierung gestiegen ist. Dieser Eindruck mag oberflächlich erscheinen: Erstens blieb der Speicherbedarf nahezu gleich, aber die neuen Datentypen ermöglichen eine effizientere Datenverarbeitung. Zweitens war der Hauptgrund für den Anstieg des Speicherbedarfs die Umwandlung von customer_id in den kategorialen Datentyp, was zur Synchronisation der Datentypen mit df_transactions notwendig war, in dem diese Umwandlung unvermeidlich war.
+
 Der DataFrame **df_transactions** stellt ein sehr großes Informationsvolumen dar und erfordert daher die folgende zusätzliche Optimierung:
 
 1. **Umwandlung der Spalte `t_dat` in `datetime64[ns]`:**
