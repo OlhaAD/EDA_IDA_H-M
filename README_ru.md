@@ -450,7 +450,7 @@ period2_transactions = df_transactions[(df_transactions['t_dat'] >= split_date1)
   
 Визуализация этих данных представлена на следующем графике:
 
-![РаспределениеКоличестваПроданыхАртикуловНаОдногоКлиентаПоПериодам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlVerk%C3%A4ufeProKundeZweiPeriodeBoxPlot.png)
+![VerteilungMengeProKundeVerkauftenArtikelNachZeitraum](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlVerk%C3%A4ufeProKundeZweiPeriodeBoxPlot.png)
 
 На основании анализа данных можно сделать следующие выводы:
 - Наибольшее количество товаров принадлежит группе "Garment Upper body".
