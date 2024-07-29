@@ -431,3 +431,45 @@ Wir sehen, dass sehr viele Kunden die gleiche Postleitzahl haben. Ich gehe davon
 | 156090 | 714976379549eb90aae4a71bca6c7402cc646ae7c40f6c                   | 159    |
 | 171208 | 7c1fa3b0ec1d37ce2c3f34f63bd792f3b4494f324b6be5                   | 157    |
 | 126228 | 5b7eb31eabebd3277de632b82267286d847fd5d44287ee                   | 156    |
+
+**Analyse der Gesamtzahl der verkauften Artikel nach Zeiträumen**
+
+Für die Analyse und Visualisierung der Daten wurde der DataFrame df_transactions verwendet, der Informationen über Transaktionen für den Zeitraum vom 20.09.2018 bis zum 22.09.2020 enthält. Um die Analyse zu vereinfachen, wurden die Daten in zwei Jahresintervalle unterteilt:
+- **Periode 1:** vom 20.09.2018 bis zum 19.09.2019
+- **Periode 2:** vom 20.09.2019 bis zum 19.09.2020
+Die Daten wurden wie folgt aufgeteilt:
+```python
+split_date1 = pd.to_datetime('2019-09-20')
+split_date2 = pd.to_datetime('2020-09-20')
+period1_transactions = df_transactions[df_transactions['t_dat'] < split_date1]
+period2_transactions = df_transactions[(df_transactions['t_dat'] >= split_date1) & (df_transactions['t_dat'] < split_date2)]
+```
+Die Ergebnisse der Analyse zeigten Folgendes:
+- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2018 - 19.09.2019: 16.803.901
+- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2019 - 19.09.2020: 14.887.938
+- Prozentuale Veränderung des Gesamtumsatzes: -11,40%
+
+Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
+![VerteilungGesamtmengeVerkauftenSKUsNachZeitraum](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/GesamtanzahlVerkauftenArtikelPlot.png)
+
+**Visualisierung der durchschnittlichen Anzahl der Verkäufe pro Kunde nach Zeiträumen**
+
+Die Ergebnisse der Analyse zeigten Folgendes:
+- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2018 - 19.09.2019: 16,71
+- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2019 - 19.09.2020: 14,99
+- Prozentuale Veränderung der durchschnittlichen Anzahl von Verkäufen: -10,26%
+
+Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
+
+![DurchschnittlicheAnzahlVerkaufterSKUsProKundeNachZeitraum](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittlicheanzahlVerk%C3%A4ufeProKundelPlot.png)
+
+**Visualisierung der Verteilung der Anzahl der Verkäufe pro Kunde mit Boxplot**
+
+Für eine detailliertere Analyse wurde die Verteilung der Anzahl der Verkäufe pro Kunde nach Quartilen durchgeführt:
+- **Erstes Quartil (25. Perzentil):** Bleibt in beiden Zeiträumen auf dem Niveau von 3.
+- **Median (50. Perzentil):** Rückgang von 8 auf 7, was auf eine geringere Käuferaktivität hinweist.
+- **Oberes Quartil (75. Perzentil):** Rückgang von 19 auf 18, was ebenfalls auf eine geringere Aktivität unter den Top-Kunden hinweist.
+- **Maximalwerte:** Rückgang der maximalen Verkaufszahlen, was auf eine Änderung im Verhalten der aktivsten Kunden oder auf Änderungen im Sortiment/der Preispolitik hinweisen kann.
+
+Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
+![РаспределениеКоличестваПроданыхАртикуловНаОдногоКлиентаПоПериодам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlVerk%C3%A4ufeProKundeZweiPeriodeBoxPlot.png)
