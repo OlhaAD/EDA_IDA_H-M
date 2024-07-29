@@ -473,3 +473,12 @@ Für eine detailliertere Analyse wurde die Verteilung der Anzahl der Verkäufe p
 
 Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 ![РаспределениеКоличестваПроданыхАртикуловНаОдногоКлиентаПоПериодам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlVerk%C3%A4ufeProKundeZweiPeriodeBoxPlot.png)
+
+Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:
+
+- Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
+- Die Artikel sind auch in Sektionen und Kategorien unterteilt, was eine detailliertere Analyse des Sortiments ermöglicht.
+- Die größte Gruppe nach Warentyp sind Hosen ("Trousers"), mit über 11.169 Artikeln, gefolgt von Kleidern ("Dresses") mit 10.362 Artikeln.
+- Die am häufigsten vorkommende Farbe der Artikel ist Schwarz ("Black") mit 22.670 Einheiten, und der am häufigsten vorkommende Druck ist einfarbig ("Solid") mit 49.747 Positionen.
+- Der Rückgang der Aktivität von Kunden im Alter von etwa 40 Jahren und der lange Schwanz in Richtung älterer Kunden stellen wichtige Bereiche für weitere Untersuchungen dar.
+- Die Daten zur Anzahl der Verkäufe und zur Statistik bestätigen eine geringere Käuferaktivität. Der Median ist von 8 auf 7 gesunken, was darauf hinweist, dass 50 % der Käufer mindestens eine Position weniger kaufen. Das obere Quartil ist ebenfalls von 19 auf 18 gesunken, was auf eine geringere Aktivität unter den Top-25 % der Kunden hinweist. Insgesamt zeigen 75 % der Käufer eine Tendenz zur Reduzierung ihrer Käufe. Die Maximalwerte zeigen einen Rückgang der extremen Käufe, was auf Änderungen im Verhalten der aktivsten Kunden oder auf Änderungen im Sortiment/der Preispolitik hinweisen kann. Diese Schlussfolgerungen erfordern eine weitere Analyse der Ursachen für den Rückgang und die Entwicklung von Strategien zur Steigerung der Verkäufe in der Zukunft.
