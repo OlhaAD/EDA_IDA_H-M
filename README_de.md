@@ -445,9 +445,9 @@ period1_transactions = df_transactions[df_transactions['t_dat'] < split_date1]
 period2_transactions = df_transactions[(df_transactions['t_dat'] >= split_date1) & (df_transactions['t_dat'] < split_date2)]
 ```
 Die Ergebnisse der Analyse zeigten Folgendes:
-- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2018 - 19.09.2019: 16.803.901
-- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2019 - 19.09.2020: 14.887.938
-- Prozentuale Veränderung des Gesamtumsatzes: -11,40%
+- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2018 - 19.09.2019: **16.803.901**
+- Gesamtzahl der Verkäufe für den Zeitraum 20.09.2019 - 19.09.2020: **14.887.938**
+- Prozentuale Veränderung des Gesamtumsatzes: **-11,40%**
 
 Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 ![VerteilungGesamtmengeVerkauftenSKUsNachZeitraum](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/GesamtanzahlVerkauftenArtikelPlot.png)
@@ -455,9 +455,9 @@ Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 **Visualisierung der durchschnittlichen Anzahl der Verkäufe pro Kunde nach Zeiträumen**
 
 Die Ergebnisse der Analyse zeigten Folgendes:
-- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2018 - 19.09.2019: 16,71
-- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2019 - 19.09.2020: 14,99
-- Prozentuale Veränderung der durchschnittlichen Anzahl von Verkäufen: -10,26%
+- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2018 - 19.09.2019: **16,71**
+- Durchschnittliche Anzahl der Verkäufe pro Kunde für den Zeitraum 20.09.2019 - 19.09.2020: **14,99**
+- Prozentuale Veränderung der durchschnittlichen Anzahl von Verkäufen: **-10,26%**
 
 Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 
@@ -466,13 +466,79 @@ Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 **Visualisierung der Verteilung der Anzahl der Verkäufe pro Kunde mit Boxplot**
 
 Für eine detailliertere Analyse wurde die Verteilung der Anzahl der Verkäufe pro Kunde nach Quartilen durchgeführt:
-- **Erstes Quartil (25. Perzentil):** Bleibt in beiden Zeiträumen auf dem Niveau von 3.
-- **Median (50. Perzentil):** Rückgang von 8 auf 7, was auf eine geringere Käuferaktivität hinweist.
-- **Oberes Quartil (75. Perzentil):** Rückgang von 19 auf 18, was ebenfalls auf eine geringere Aktivität unter den Top-Kunden hinweist.
-- **Maximalwerte:** Rückgang der maximalen Verkaufszahlen, was auf eine Änderung im Verhalten der aktivsten Kunden oder auf Änderungen im Sortiment/der Preispolitik hinweisen kann.
+- **Erster Zeitraum (20.09.2018 - 19.09.2019):**
+    - Anzahl der Kunden: 1.005.899
+    - Minimum: 1.0000
+    - Erster Quartil (25. Perzentil): 3.0000
+    - Median (50. Perzentil): 8.0000
+    - Oberer Quartil (75. Perzentil): 20.0000
+    - Maximum: 897.0000
+
+- **Zweiter Zeitraum (20.09.2019 - 19.09.2020):**
+    - Anzahl der Kunden: 993.045
+    - Minimum: 1.0000
+    - Erster Quartil (25. Perzentil): 3.0000
+    - Median (50. Perzentil): 8.0000
+    - Oberer Quartil (75. Perzentil): 18.0000
+    - Maximum: 1021.0000
+  
+- **Erster Quartil (25. Perzentil):** In beiden Zeiträumen bleibt der erste Quartil bei 3, was bedeutet, dass 25% der Kunden maximal 3 Käufe in beiden Zeiträumen getätigt haben.
+
+- **Median (50. Perzentil):** Der Medianwert ist in beiden Zeiträumen gleich und beträgt 8. Das bedeutet, dass der mittlere Kunde in beiden Zeiträumen 8 Käufe getätigt hat.
+
+- **Oberer Quartil (75. Perzentil):** Der Wert ist von 20 im ersten Zeitraum auf 18 im zweiten Zeitraum gesunken. Dies weist auf eine geringere Kaufaktivität bei den aktivsten 25% der Kunden hin.
+
+- **Maximalwerte:** Die Erhöhung des maximalen Wertes der Anzahl der Käufe von 897 auf 1021 deutet auf das Auftreten einer kleinen Anzahl von Kunden hin, die im zweiten Zeitraum im Vergleich zum ersten deutlich mehr Käufe getätigt haben.
 
 Die Visualisierung dieser Daten wird im folgenden Diagramm dargestellt:
 ![РаспределениеКоличестваПроданыхАртикуловНаОдногоКлиентаПоПериодам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlVerk%C3%A4ufeProKundeZweiPeriodeBoxPlot.png)
+
+
+**Analyse des Gesamtumsatzes nach Zeiträumen**
+
+Die Ergebnisse der Analyse zeigten Folgendes:
+- Gesamtumsatz für den Zeitraum 20.09.2018 - 19.09.2019: **461.507,12**
+- Gesamtumsatz für den Zeitraum 20.09.2019 - 19.09.2020: **419.750,19**
+- Prozentuale Veränderung des Gesamtumsatzes: **-9,05%**
+
+Die Visualisierung dieser Daten ist im folgenden Diagramm dargestellt:
+![GesamtumsatzNachZeiträumen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/GesamtUmsatzlPlot.png)
+
+**Visualisierung der durchschnittlichen Einkaufssumme pro Kunde nach Zeiträumen**
+
+Die Ergebnisse der Analyse zeigten Folgendes:
+- Durchschnittliche Einkaufssumme pro Kunde für den Zeitraum 20.09.2018 - 19.09.2019: **0,46**
+- Durchschnittliche Einkaufssumme pro Kunde für den Zeitraum 20.09.2019 - 19.09.2020: **0,42**
+- Prozentuale Veränderung der durchschnittlichen Einkaufssumme pro Kunde: **-7,87%**
+
+Die Visualisierung dieser Daten ist im folgenden Diagramm dargestellt:
+
+![DurchschnittlichenEinkaufssummeProKundeNachZeiträumen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittlicheEinkaufssummeProKundelPlot.png)
+
+**Visualisierung der Verteilung der Einkaufssumme pro Kunde anhand eines Boxplots**
+
+Für eine detailliertere Analyse wurde die Verteilung der Einkaufssumme pro Kunde nach Quartilen durchgeführt:
+
+- **Erster Zeitraum (20.09.2018 - 19.09.2019):**
+    - Anzahl der Kunden: 1.005.899
+    - Minimum: 0,0008
+    - Erster Quartil (25. Perzentil): 0,0826
+    - Median (50. Perzentil): 0,2054
+    - Oberer Quartil (75. Perzentil): 0,5136
+    - Maximum: 26,3276
+- **Zweiter Zeitraum (20.09.2019 - 19.09.2020):**
+    - Anzahl der Kunden: 993.045
+    - Minimum: 0,0008
+    - Erster Quartil (25. Perzentil): 0,0830
+    - Median (50. Perzentil): 0,2027
+    - Oberer Quartil (75. Perzentil): 0,4862
+    - Maximum: 34,9546
+  
+Die Werte des ersten Quartils und des Medians bleiben zwischen den Zeiträumen nahezu unverändert. Dies bedeutet, dass 50% der Kunden in beiden Zeiträumen ungefähr den gleichen Betrag ausgeben, was auf eine stabile Basis loyaler Kunden hinweist. Im oberen Quartil (75. Perzentil) ist ein Rückgang zu verzeichnen, was darauf hinweist, dass die aktivsten 25% der Kunden weniger ausgeben. Die maximalen Werte haben zugenommen, was darauf hindeutet, dass eine kleine Gruppe von Kunden im zweiten Zeitraum im Vergleich zum ersten deutlich mehr Geld ausgegeben hat. Diese Kunden zeigten eine extrem hohe Aktivität.
+
+Die Visualisierung dieser Daten ist im folgenden Diagramm dargestellt:
+
+![EinkaufssummeProKundeBoxplots](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/EinkaufssummeProKundeZweiPeriodeBoxPlot.png)
 
 Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:
 
@@ -481,4 +547,7 @@ Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:
 - Die größte Gruppe nach Warentyp sind Hosen ("Trousers"), mit über 11.169 Artikeln, gefolgt von Kleidern ("Dresses") mit 10.362 Artikeln.
 - Die am häufigsten vorkommende Farbe der Artikel ist Schwarz ("Black") mit 22.670 Einheiten, und der am häufigsten vorkommende Druck ist einfarbig ("Solid") mit 49.747 Positionen.
 - Der Rückgang der Aktivität von Kunden im Alter von etwa 40 Jahren und der lange Schwanz in Richtung älterer Kunden stellen wichtige Bereiche für weitere Untersuchungen dar.
-- Die Daten zur Anzahl der Verkäufe und zur Statistik bestätigen eine geringere Käuferaktivität. Der Median ist von 8 auf 7 gesunken, was darauf hinweist, dass 50 % der Käufer mindestens eine Position weniger kaufen. Das obere Quartil ist ebenfalls von 19 auf 18 gesunken, was auf eine geringere Aktivität unter den Top-25 % der Kunden hinweist. Insgesamt zeigen 75 % der Käufer eine Tendenz zur Reduzierung ihrer Käufe. Die Maximalwerte zeigen einen Rückgang der extremen Käufe, was auf Änderungen im Verhalten der aktivsten Kunden oder auf Änderungen im Sortiment/der Preispolitik hinweisen kann. Diese Schlussfolgerungen erfordern eine weitere Analyse der Ursachen für den Rückgang und die Entwicklung von Strategien zur Steigerung der Verkäufe in der Zukunft.
+-Die Daten zu den Verkaufszahlen und zur Statistik bestätigen eine geringere Käuferaktivität. Der Gesamtumsatz pro Jahr ist um 9,05% gesunken, und die Gesamtanzahl der verkauften Positionen pro Jahr ist um 11,40% gesunken.
+- Die Werte des ersten Quartils und des Medians für die Einkaufssumme und die Anzahl der Käufe bleiben zwischen den Zeiträumen nahezu unverändert. Dies bedeutet, dass 50% der Kunden in beiden Zeiträumen ungefähr die gleiche Anzahl von Käufen tätigen und ungefähr den gleichen Betrag ausgeben. Dies weist auf eine stabile Basis loyaler Kunden hin.
+- Rückgang der Kaufaktivität unter den Top-Kunden: Im oberen Quartil (75. Perzentil) ist sowohl bei der Einkaufssumme als auch bei der Anzahl der Käufe ein Rückgang zu verzeichnen. Dies deutet darauf hin, dass die aktivsten 25% der Kunden weniger Käufe tätigen und weniger Geld ausgeben.
+- Die maximalen Werte sowohl für die Einkaufssumme als auch für die Anzahl der Käufe haben zugenommen. Dies bedeutet, dass eine kleine Gruppe von Kunden im zweiten Zeitraum im Vergleich zum ersten Zeitraum deutlich mehr Käufe getätigt und mehr Geld ausgegeben hat. Diese Kunden zeigten eine extrem hohe Aktivität.
