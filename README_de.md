@@ -540,7 +540,24 @@ Die Visualisierung dieser Daten ist im folgenden Diagramm dargestellt:
 
 ![EinkaufssummeProKundeBoxplots](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/EinkaufssummeProKundeZweiPeriodeBoxPlot.png)
 
-Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:
+**Analyse und Visualisierung der Durchschnittspreisverteilung nach Perioden**
+
+Die präsentierte Visualisierung zeigt Boxplots, die die Verteilung der durchschnittlichen Preise pro Artikel in zwei aufeinanderfolgenden Jahresperioden darstellen. 
+![DurchschnittspreisverteilungNachPerioden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittlichenPreisverteilungZweiPeriodeBoxPlot.png)
+
+Hier sind die Schlüsselpunkte der Analyse:
+
+**Durchschnittspreis:**
+- Erster Zeitraum (20.09.2018 - 19.09.2019): Der durchschnittliche Preis betrug 0,0282 Einheiten.
+- Zweiter Zeitraum (20.09.2019 - 20.09.2020): Der durchschnittliche Preis fiel leicht auf 0,0276 Einheiten.
+- Die prozentuale Änderung des Durchschnittspreises zwischen den Perioden betrug -1,86 %, was auf einen geringfügigen Rückgang der Preise im zweiten Zeitraum hinweist.
+
+**Preisverteilung:**
+- Die Quartile der Preisverteilung zeigen, dass in beiden Perioden 25% der günstigsten Produkte Preise bis zu 0,0135 Einheiten hatten, während 50% der Produkte bis zu 0,0220 Einheiten im zweiten und 0,0218 Einheiten im ersten Zeitraum kosteten. Dies unterstreicht die Preisstabilität bei der Mehrheit der Produkte.
+- Der maximale Preis eines Produkts erreichte in beiden Perioden 0,5068 Einheiten, was das Vorhandensein von Artikeln mit deutlich höheren als dem Durchschnittspreis belegt.
+- Diese Visualisierung und Analyse helfen, die Dynamik der Produktpreise zwischen zwei Jahresintervallen zu bewerten und zeigen einen leichten Rückgang der durchschnittlichen Preise im letzten Zeitraum sowie eine allgemeine Preisstabilität bei den meisten Produkten. Diese Daten können nützlich sein für die Planung der Preisstrategie und die Analyse von Markttrends.
+
+**Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
 - Die Artikel sind auch in Sektionen und Kategorien unterteilt, was eine detailliertere Analyse des Sortiments ermöglicht.
