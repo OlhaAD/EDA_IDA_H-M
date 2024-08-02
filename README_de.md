@@ -557,6 +557,25 @@ Hier sind die Schlüsselpunkte der Analyse:
 - Der maximale Preis eines Produkts erreichte in beiden Perioden 0,5068 Einheiten, was das Vorhandensein von Artikeln mit deutlich höheren als dem Durchschnittspreis belegt.
 - Diese Visualisierung und Analyse helfen, die Dynamik der Produktpreise zwischen zwei Jahresintervallen zu bewerten und zeigen einen leichten Rückgang der durchschnittlichen Preise im letzten Zeitraum sowie eine allgemeine Preisstabilität bei den meisten Produkten. Diese Daten können nützlich sein für die Planung der Preisstrategie und die Analyse von Markttrends.
 
+**Analyse der Kundenaktivität, des Mitgliederstatus im Club und der Häufigkeit des Erhalts von Modenachrichten nach Zeiträumen**
+
+Diese Gruppe von Visualisierungen zeigt geringfügige Änderungen in der Kundenaktivität, dem Mitgliederstatus im Club und der Häufigkeit des Erhalts von Modenachrichten, aufgeteilt auf zwei aufeinanderfolgende Perioden: vom 20. September 2018 bis zum 19. September 2019 und vom 20. September 2019 bis zum 20. September 2020.
+
+![KundenaktivitätMitgliederstatusHäufigkeit](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/%D0%90ktivit%C3%A4tClubmitgliedsstatusH%C3%A4ufigkeit.png)
+
+Hier sind detaillierte Beobachtungen für jede Kategorie:
+
+**Kundenaktivität nach Zeitraum:**
+- Die Anzahl der aktiven und inaktiven Kunden bleibt zwischen den Perioden fast unverändert, mit einem leichten Rückgang der Anzahl der aktiven Kunden im zweiten Zeitraum. Dies könnte auf übliche Schwankungen in der Kundenbasis oder Änderungen in den Engagement-Strategien zurückzuführen sein.
+
+**Mitgliederstatus im Club nach Zeitraum:**
+- Die meisten Kunden bleiben aktive Clubmitglieder mit sehr geringen Änderungen zwischen den Perioden, was auf eine relative Stabilität des Clubs hinweist, aber auch auf neue Engagements.
+  
+**Häufigkeit des Erhalts von Modenachrichten nach Zeitraum:**
+- Die Häufigkeit, mit der Kunden Modenachrichten erhalten, zeigt ebenfalls geringfügige Änderungen. Die meisten Kunden erhalten keine Nachrichten, gefolgt von denen, die Nachrichten erhalten. Ein kleinerer Teil der Kunden erhält monatlich Nachrichten. Die Verteilung bleibt zwischen den Perioden stabil, was auf eine unveränderte Kommunikationsstrategie hinweist.
+
+Die Visualisierungen zeigen, dass die Kundenbasis hinsichtlich der Aktivität, Clubmitgliedschaft und Informationsaustausch relativ stabil ist, mit nur minimalen Schwankungen über die betrachteten Zeiträume, die nicht den Schwankungen im Verkaufsvolumen entsprechen, die wir zuvor festgestellt haben.
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
