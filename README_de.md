@@ -588,6 +588,18 @@ Basierend auf der Visualisierung können folgende Schlussfolgerungen gezogen wer
 
 - **Abschwung im Verkauf:** Ein besonders deutlicher Rückgang der Verkäufe ist in den Wintermonaten und im August festzustellen, was mit der Verkaufssaison zusammenhängen könnte. Während Verkaufszeiten, obwohl ein Anstieg des Verkaufsvolumens beobachtet wird, kann der durchschnittliche Verkaufspreis sinken, was den Gesamtumsatz beeinflusst. Eine weitere Untersuchung der Dynamik der Durchschnittspreise pro Monat für beide Perioden wird bei der Planung der Preisgestaltung und Marketingaktionen helfen, um die Rentabilität in diesen Schlüsselmonaten zu maximieren.
 
+**Analyse der Verkaufsmengen pro Monat für zwei Perioden (September 2018 — September 2019 und September 2019 — September 2020)**
+
+Das Diagramm der Verkaufsmengen pro Monat zeigt deutlich saisonale Schwankungen im Verkaufsvolumen. Ein Rückgang der Verkäufe ist in den Wintermonaten zu beobachten, einschließlich der Ausverkaufszeiten, was auf eine allgemeine Abnahme der Verbraucheraktivität oder eine Änderung der Verbraucherpräferenzen zu dieser Jahreszeit hinweisen könnte. Zudem ist erkennbar, dass die Sommermonate durch höhere Verkaufszahlen gekennzeichnet sind, was mit einer saisonalen Nachfragesteigerung nach bestimmten Produktkategorien, wie leichter Kleidung, zusammenhängen könnte.
+
+![VerkaufsmengenProMonatFürZweiPerioden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/AnzahlDerVerk%C3%A4ufeProMonatPlot.png)
+
+**Analyse der Durchschnittspreise pro Monat für zwei Perioden (September 2018 — September 2019 und September 2019 — September 2020)**
+
+Die Durchschnittspreise pro Monat zeigen ein relatives Absinken in den Sommermonaten und ein Ansteigen in den Herbstmonaten. Dies kann mit einer Veränderung des auf dem Markt angebotenen Produktangebots zusammenhängen, wobei im Sommer günstigere Artikel wie T-Shirts vorherrschen, während im Winter teurere Artikel wie Pullover mehr verkauft werden. Die Preisdynamik könnte auch saisonale Verkäufe und Aktionen widerspiegeln, die von Geschäften durchgeführt werden, um Kunden anzuziehen.
+
+![DurchschnittspreiseProMonatFürZweiPerioden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittsPreisProMonatPlot.png)
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
@@ -599,3 +611,6 @@ Basierend auf der Visualisierung können folgende Schlussfolgerungen gezogen wer
 - Die Werte des ersten Quartils und des Medians für die Einkaufssumme und die Anzahl der Käufe bleiben zwischen den Zeiträumen nahezu unverändert. Dies bedeutet, dass 50% der Kunden in beiden Zeiträumen ungefähr die gleiche Anzahl von Käufen tätigen und ungefähr den gleichen Betrag ausgeben. Dies weist auf eine stabile Basis loyaler Kunden hin.
 - Rückgang der Kaufaktivität unter den Top-Kunden: Im oberen Quartil (75. Perzentil) ist sowohl bei der Einkaufssumme als auch bei der Anzahl der Käufe ein Rückgang zu verzeichnen. Dies deutet darauf hin, dass die aktivsten 25% der Kunden weniger Käufe tätigen und weniger Geld ausgeben.
 - Die maximalen Werte sowohl für die Einkaufssumme als auch für die Anzahl der Käufe haben zugenommen. Dies bedeutet, dass eine kleine Gruppe von Kunden im zweiten Zeitraum im Vergleich zum ersten Zeitraum deutlich mehr Käufe getätigt und mehr Geld ausgegeben hat. Diese Kunden zeigten eine extrem hohe Aktivität.
+-  Saisonalität und Einfluss von Marketingkampagnen: Die Daten zeigen eine klare Saisonalität der Verkäufe. Die Sommermonate zeichnen sich durch erhöhte Umsätze aus, die möglicherweise auf saisonale Marketingkampagnen und einen natürlichen Anstieg der Verbrauchernachfrage nach bestimmten Warenarten, beispielsweise leichter Kleidung, zurückzuführen sind. Im Winter ist ein Rückgang sowohl des Verkaufsvolumens als auch der verkauften Einheiten zu verzeichnen.
+- Preistrends: Die durchschnittlichen Preise schwanken im Laufe des Jahres, mit Tiefstständen in den Sommermonaten und Anstiegen in den kälteren Monaten. Diese Änderung spiegelt möglicherweise saisonale Veränderungen im Produktmix wider, wobei im Sommer günstigere Artikel wie T-Shirts und Shorts und im Winter teurere Artikel wie Pullover und Mäntel verkauft werden.
+- Allgemeiner Rückgang der Umsätze und Preise: Im zweiten Untersuchungszeitraum kommt es im Vergleich zum ersten Zeitraum zu einem allgemeinen Rückgang sowohl der Umsätze als auch der Durchschnittspreise. Dieser Rückgang kann durch eine Reihe von Faktoren verursacht werden, darunter Veränderungen im wirtschaftlichen Umfeld, im Marktwettbewerb sowie Veränderungen in den Vorlieben und im Verhalten der Verbraucher.
