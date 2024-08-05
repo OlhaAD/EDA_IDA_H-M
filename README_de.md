@@ -576,6 +576,18 @@ Hier sind detaillierte Beobachtungen für jede Kategorie:
 
 Die Visualisierungen zeigen, dass die Kundenbasis hinsichtlich der Aktivität, Clubmitgliedschaft und Informationsaustausch relativ stabil ist, mit nur minimalen Schwankungen über die betrachteten Zeiträume, die nicht den Schwankungen im Verkaufsvolumen entsprechen, die wir zuvor festgestellt haben.
 
+**Visualisierungen des Verkaufsvolumens nach Monaten für zwei Perioden (September 2018 — September 2019 und September 2019 — September 2020)**
+
+![VisualisierungVerkaufsvolumeNachMonaten](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatBoxPlot.png)
+
+Basierend auf der Visualisierung können folgende Schlussfolgerungen gezogen werden:
+
+- **Saisonalität der Verkäufe:** Das Diagramm zeigt deutlich saisonale Schwankungen im Verkaufsvolumen. Zum Beispiel ist ein Anstieg der Verkäufe von April bis Juni zu beobachten, was mit saisonalen Marketingkampagnen oder einem Anstieg der Nachfrage im Frühjahr/Sommer zusammenhängen könnte.
+
+- **Jahr-zu-Jahr-Vergleich:** Es ist ein allgemeiner Rückgang der Verkäufe im zweiten Zeitraum im Vergleich zum ersten in den meisten Monaten zu beobachten. Dieser Rückgang könnte auf verschiedene Faktoren zurückzuführen sein, wie Veränderungen im wirtschaftlichen Umfeld, der Konkurrenz, Veränderungen in den Verbraucherpräferenzen oder internen Strategien des Unternehmens.
+
+- **Abschwung im Verkauf:** Ein besonders deutlicher Rückgang der Verkäufe ist in den Wintermonaten und im August festzustellen, was mit der Verkaufssaison zusammenhängen könnte. Während Verkaufszeiten, obwohl ein Anstieg des Verkaufsvolumens beobachtet wird, kann der durchschnittliche Verkaufspreis sinken, was den Gesamtumsatz beeinflusst. Eine weitere Untersuchung der Dynamik der Durchschnittspreise pro Monat für beide Perioden wird bei der Planung der Preisgestaltung und Marketingaktionen helfen, um die Rentabilität in diesen Schlüsselmonaten zu maximieren.
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
