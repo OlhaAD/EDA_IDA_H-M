@@ -1,8 +1,10 @@
-# Primäre Datenanalyse und Empfehlungssystem für H&M-Kunden
+# Marktdynamik der Mode bei H&M: Analyse von Trends, Preisen und Kundenverhalten
 
 ## Einführung
 
-Der Schwerpunkt dieses Projekts liegt auf der primären Datenanalyse und der Entwicklung eines personalisierten Empfehlungssystems für H&M-Kunden. Die Analyse erfolgt mit Python und umfasst eine umfangreiche explorative Datenanalyse (EDA) und eine anfängliche Datenanalyse (IDA).
+Im Rahmen dieses Projekts liegt der Schwerpunkt auf der primären Datenanalyse der Marke H&M. Die Analyse wird mit der Programmiersprache Python durchgeführt und umfasst eine umfangreiche explorative Datenanalyse (Exploratory Data Analysis, EDA) sowie eine anfängliche Datenanalyse (Initial Data Analysis, IDA). Diese Analysemethoden helfen, die Haupttrends, Anomalien, Muster und mögliche Richtungen für weitere tiefergehende Untersuchungen der Daten zu identifizieren.
+
+Das Ziel des Projekts ist es, einen umfassenden Überblick über den aktuellen Stand der Verkäufe und das Kundenverhalten bei H&M zu bieten sowie den Einfluss verschiedener Faktoren auf die Verbraucheraktivität und die Wirksamkeit der Geschäftsstrategien zu bewerten. Die Ergebnisse dieser Analyse werden die Grundlage für die Entwicklung von Empfehlungen zur Optimierung der Marketing- und Verkaufsstrategien des Unternehmens bilden.
 
 ## Wie man das Projekt startet
 - Klone das Repository auf deinen lokalen Computer:
