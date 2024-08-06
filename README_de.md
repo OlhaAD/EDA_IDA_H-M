@@ -602,6 +602,19 @@ Die Durchschnittspreise pro Monat zeigen ein relatives Absinken in den Sommermon
 
 ![DurchschnittspreiseProMonatFürZweiPerioden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittsPreisProMonatPlot.png)
 
+**Verteilung der Preise nach Produkttypen in den drei Hauptbekleidungskategorien**
+
+Diese Visualisierung zeigt die Preisverteilung verschiedener Produkttypen in den drei größten Bekleidungskategorien: "Garment Full body", "Garment Lower body" und "Garment Upper body". Der Graph ermöglicht eine anschauliche Bewertung der Preisverteilung innerhalb jeder Kategorie und hebt teurere sowie zugänglichere Produkte hervor. Zum Beispiel zeigen "Coats" und "Jackets" eine breite Preisspanne, während Produkte wie "T-Shirts" und "Tops" eine kompaktere Verteilung aufweisen, was auf eine relativ stabile und erschwingliche Preiskategorie hinweist.
+
+![VerteilungDerPreiseNachProdukttypen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseInDreiProduktgruppen%20(1).png)
+
+**Verteilung der Preise nach verschiedenen Produktkategorien**
+
+Diese Diagramm hilft zu verstehen, welche Segmente höhere oder niedrigere Preise bieten und welche eine größere Variabilität in der Preisgestaltung aufweisen. Zum Beispiel ist die Preisspanne in der Kategorie der Kinderbekleidung relativ klein. Dies deutet auf eine stabilere und vorhersehbare Preisgestaltung hin, was ein wichtiger Faktor für Eltern ist, die Bekleidung für ihre Kinder planen.
+In der Kategorie Damenbekleidung (Ladieswear) sehen wir eine deutlich größere Preisspanne sowie viele Ausreißer, was auf eine hohe Variabilität in der Preisgestaltung hindeutet. Dies könnte mit einem breiteren Sortiment an Produkten zusammenhängen, das sowohl erschwinglichere Alltagsartikel als auch exklusive oder Premium-Modelle umfasst. Die hohe Preisspanne und zahlreichen Ausreißer bei den Preisen zeigen, dass die Käufer aus einer breiten Produktpalette wählen können, abhängig von ihren Bedürfnissen und ihrem Budget.
+
+![VerteilungDerPreiseNachProduktkategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseNachProduktkategorien.png)
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
