@@ -615,6 +615,14 @@ In der Kategorie Damenbekleidung (Ladieswear) sehen wir eine deutlich größere 
 
 ![VerteilungDerPreiseNachProduktkategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseNachProduktkategorien.png)
 
+**Wärmekarten der Verkaufsvolumen und verkauften Einheiten in den drei Hauptbekleidungskategorien über zwei Perioden (September 2018 – September 2019 und September 2019 – September 2020)**
+
+Wärmekarten illustrieren die Verteilung der Verkäufe und der verkauften Einheiten über zwei Jahresperioden in den drei Hauptbekleidungskategorien. Die Farbpalette der Karten spiegelt das Verkaufsniveau wider: Dunklere Töne zeigen höhere Werte an, während hellere Töne niedrigere Werte anzeigen. Diese visuelle Darstellung ermöglicht es, schnell die Monate und Kategorien mit der höchsten Aktivität zu bewerten und die Veränderungen zwischen den beiden Perioden zu vergleichen.
+Besonders bemerkenswert ist, dass trotz eines allgemeinen Rückgangs der Verkäufe bei den meisten Produkttypen die Verkäufe von Kleidern (Dresses), die den zweiten Platz sowohl im Volumen als auch in der Anzahl der Verkäufe einnehmen, eine relative Stabilität zeigten. In der zweiten Periode erhöhte sich die Anzahl der verkauften Kleider, obwohl der Verkaufsumsatz leicht sank. Diese Stabilität, im Gegensatz zu anderen Produkttypen, erfordert zusätzliche Untersuchungen. Neben Kleidern zeigten auch die Kategorien Top, Leggings/Tights und Skirt eine relative Stabilität, während in der Kategorie Blazer sogar ein Wachstum der Verkäufe beobachtet wurde. Jeder dieser Produkttypen erfordert eine zusätzliche Analyse und Datensammlung, um die Gründe für solche Variabilitäten in den Verkäufen zu verstehen.
+
+![WärmekarteVerkaufsvolumenZweiPeriodenInDreiKategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInDreiProduktgruppen.png)
+![WärmekarteVerkauftenEinhaltenZweiPeriodenInDreiKategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInDreiProduktgruppen.png)
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
