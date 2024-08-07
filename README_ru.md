@@ -604,6 +604,36 @@ period2_transactions = df_transactions[(df_transactions['t_dat'] >= split_date1)
 ![СтолбДиагрОбъемаПродажПоПериодамВТрехКатегориях](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInDreiProduktgruppenPlot.png)
 ![СтолбДиаграКоличестваПродажПоПериодамВТрехКатегориях](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInDreiProduktgruppenPlot.png)
 
+**Визуализации месячных продаж по ключевым типам продуктов**
+
+Ниже представлены визуализации месячных продаж для наиболее значимых типов продуктов, включая 'Trousers', 'Dress', 'Sweater', 'Jacket', 'Blouse', 'T-shirt', 'Skirt', 'Top', 'Shirt' и 'Shorts'. Каждый график демонстрирует динамику продаж за два временных периода: с сентября 2018 года по сентябрь 2019 года и с сентября 2019 года по сентябрь 2020 года. Эти данные выявляют тренды, пиковые периода и периоды спада продаж для каждого типа товара.
+
+Основные выводы из визуализаций:
+
+- **Сезонность:** Графики наглядно демонстрируют сезонные колебания в продажах, что облегчает планирование запасов и корректировку маркетинговых кампаний. Жакеты и свитера пользуются повышенным спросом в осенне-зимний период, в то время как шорты — в летние месяцы.
+- **Сравнение продаж между периодами:** Визуальное сравнение продаж помогает оценить эффективность применяемых стратегий и изменений в ассортименте.
+- **Особые наблюдения:** Например, категория 'Dress' показала стабильность по годам, с ростом продаж в период с октября по февраль второго года. Однако следующие месяцы характеризовались спадом, что, вероятно, связано с пандемией коронавируса. Похожую динамику продемонстрировали и блузы, чьи продажи существенно упали, особенно с марта по июль 2020 года, что может быть связано с сокращением потребности в офисной одежде во время пандемии.
+
+![БлузыПрМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Blouse.png)
+
+![ПлатьяПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Dress.png)
+
+![ЖакетыПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Jacket.png)
+
+![РубашкиПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Shirt.png)
+
+![ШортыПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Shorts.png)
+
+![ЮбкиПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Skirt.png)
+
+![СвитераПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Sweater.png)
+
+![ФутболкиПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26T-shirt.png)
+
+![ТопыПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Top.png)
+
+![БрюкиПоМесяцам](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Trousers.png)
+ 
 **На основании анализа данных можно сделать следующие выводы:**
 - Наибольшее количество товаров принадлежит группе "Garment Upper body".
 - Товары также разделены на секции и категории, что позволяет более детально анализировать ассортимент.
