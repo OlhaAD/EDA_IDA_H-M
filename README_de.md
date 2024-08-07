@@ -632,6 +632,36 @@ Aus der Analyse der Säulendiagramme geht hervor, dass die drei Spitzenreiter im
 ![BoxPlotVerkaufsvolumenZweiPeriodenInDreiKategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInDreiProduktgruppenPlot.png)
 ![BoxPloVerkauftenEinhaltenZweiPeriodenInDreiKategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInDreiProduktgruppenPlot.png)
 
+**Visualisierungen der monatlichen Verkäufe nach Schlüsselprodukttypen**
+
+Unten sind Visualisierungen der monatlichen Verkäufe für die wichtigsten Produkttypen dargestellt, einschließlich 'Hosen' (Trousers), 'Kleider' (Dress), 'Pullover' (Sweater), 'Jacken' (Jacket), 'Blusen' (Blouse), 'T-Shirts' (T-shirt), 'Röcke' (Skirt), 'Oberteile' (Top), 'Hemden' (Shirt) und 'Shorts'. Jedes Diagramm zeigt die Verkaufsdynamik über zwei Zeiträume: von September 2018 bis September 2019 und von September 2019 bis September 2020. Diese Daten zeigen Trends, Spitzenzeiten und Rückgangsperioden für jeden Produkttyp.
+
+Haupterkenntnisse aus den Visualisierungen:
+
+- **Saisonalität:** Die Diagramme veranschaulichen deutlich die saisonalen Schwankungen im Verkauf, was die Planung von Lagerbeständen und die Anpassung von Marketingkampagnen erleichtert. Jacken und Pullover erfahren eine erhöhte Nachfrage in der Herbst-Winter-Periode, während Shorts in den Sommermonaten beliebter sind.
+- **Vergleich der Verkäufe zwischen den Perioden:** Der visuelle Vergleich der Verkäufe hilft, die Wirksamkeit der angewandten Verkaufsstrategien und die vorgenommenen Sortimentsänderungen zu bewerten.
+- **Besondere Beobachtungen:** Zum Beispiel zeigte die Kategorie 'Kleider' eine Stabilität über die Jahre hinweg, mit einem Anstieg der Verkäufe von Oktober bis Februar im zweiten Jahr. Die folgenden Monate waren jedoch von einem Rückgang geprägt, was wahrscheinlich mit der Coronavirus-Pandemie zusammenhängt. Eine ähnliche Dynamik zeigten auch die Blusen, deren Verkäufe erheblich fielen, besonders von März bis Juli 2020, was mit einer verringerten Nachfrage nach Bürokleidung während der Pandemie zusammenhängen könnte.
+
+![BlusenProMonat](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Blouse.png)
+
+![KleiderProMonat](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Dress.png)
+
+![JacketProMonat](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Jacket.png)
+
+![HemdenProMonat](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Shirt.png)
+
+![ShortsProMonat](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Shorts.png)
+
+![RöckeProMonate](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Skirt.png)
+
+![PulloverProMonate](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Sweater.png)
+
+![TshirtsProMonate](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26T-shirt.png)
+
+![TopsProMonate](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Top.png)
+
+![HosenProMonate](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonat%26Trousers.png)
+
 **Basierend auf der Datenanalyse lassen sich folgende Schlussfolgerungen ziehen:**
 
 - Die größte Anzahl an Artikeln gehört zur Gruppe "Garment Upper body".
