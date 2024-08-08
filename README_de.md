@@ -62,11 +62,12 @@ print(df_transactions.head())
 ```
 ## Ziele und Aufgaben
 ### Ziele
+Einen umfassenden Überblick über den aktuellen Stand der Verkäufe und des Kundenverhaltens bei H&M zu bieten, sowie den Einfluss verschiedener Faktoren auf die Kundenaktivität und die Wirksamkeit der Geschäftsstrategien zu bewerten. Die Ergebnisse dieser Analyse werden die Grundlage für die Entwicklung von Empfehlungen zur Optimierung der Marketing- und Verkaufsstrategien des Unternehmens bilden.
 ### Aufgaben
-1. **Daten sammeln und vorverarbeiten**
-2. **Datenanalyse**
-3. **Datenvisualisierung**
-4. 
+1. **Daten sammeln und vorverarbeiten:** Suchen, Herunterladen und Bereinigen der Daten von Fehlern und fehlenden Werten, Vorbereitung der Daten für die Analyse.
+2. **Datenanalyse:** Untersuchung von Mustern, Trends und Zusammenhängen in den vorbereiteten Daten.
+3. **Datenvisualisierung:** Erstellung von Grafiken und Diagrammen zur anschaulichen Darstellung der Analyseergebnisse.
+4. **Schlussfolgerungen:** Interpretation der Analyse- und Visualisierungsergebnisse zur Formulierung der abschließenden Schlussfolgerungen und Empfehlungen
 ## Detaillierte Methodik
 ### Werkzeuge und Bibliotheken
 In diesem Projekt wurden die folgenden Werkzeuge und Bibliotheken verwendet:
