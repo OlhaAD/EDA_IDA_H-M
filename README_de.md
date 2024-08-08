@@ -609,6 +609,20 @@ In der Kategorie Damenbekleidung (Ladieswear) sehen wir eine deutlich größere 
 
 ![VerteilungDerPreiseNachProduktkategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseNachProduktkategorien.png)
 
+**Verteilung der Umsatzanteile nach Produktkategorien**
+
+Die untenstehende Kreisdiagramm zeigt die Umsatzanteile verschiedener Produktkategorien für den betrachteten Zeitraum:
+
+- **Damenbekleidung (Ladieswear):** Mit einem Anteil von 48,4% markiert sie die höchste Nachfrage innerhalb der Produktkategorien.
+- **Divided:** Dieses Segment, das auf trendige Jugendmode ausgerichtet ist, trägt 21,4% zum Gesamtumsatz bei, was seine Beliebtheit unter jungen Leuten bestätigt.
+- **Unterwäsche und Strumpfhosen (Lingeries/Tights):** Mit einem Anteil von 13,1% zeigt dieses Segment ebenfalls einen signifikanten Beitrag zum Gesamtumsatz.
+- **Herrenbekleidung (Menswear):** Hat einen Anteil von 5,5% am Gesamtumsatz, was auf eine stabile Nachfrage hinweist.
+- **Damenaccessoires (Ladies Accessories):** Mit einem Umsatzanteil von 4,8% bleiben Accessoires ein wichtiger Teil des Produktportfolios.
+- **Sportbekleidung (Sport):** Sportartikel machen 4,1% des Marktes aus, was ihre Rolle in einem spezialisierten Segment unterstreicht.
+- **Kinderbekleidung (Other):** Beinhaltet alle Arten von Kinderprodukten und macht 2,7% des Gesamtumsatzes aus. Dies reflektiert ein relativ geringes Interesse in diesem Segment, zeigt jedoch erhebliches Entwicklungspotenzial. Mütter, die Hauptkäuferinnen in den Segmenten Damen- und Jugendmode, könnten als Zielgruppe für die Expansion in den Kinderbereich dienen.
+
+![UmsatzanteileNachProduktkategorienPie](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/UmsatzanteileProductIndexPie.png)
+
 **Visualisierungen des Verkaufsvolumens und der verkauften Einheiten nach Produktkategorien für zwei Perioden (September 2018 – September 2019 und September 2019 – September 2020**
 
 Diese Visualisierungen zeigen das Verkaufsvolumen und die Anzahl der verkauften Einheiten für verschiedene Produktkategorien von H&M im Zeitraum von September 2018 bis September 2020. Sie ermöglichen es uns zu erkennen, welche Kategorien den größten Beitrag zum Gesamtumsatz des Unternehmens leisten.
@@ -698,4 +712,5 @@ Haupterkenntnisse aus den Visualisierungen:
 -  Saisonalität und Einfluss von Marketingkampagnen: Die Daten zeigen eine klare Saisonalität der Verkäufe. Die Sommermonate zeichnen sich durch erhöhte Umsätze aus, die möglicherweise auf saisonale Marketingkampagnen und einen natürlichen Anstieg der Verbrauchernachfrage nach bestimmten Warenarten, beispielsweise leichter Kleidung, zurückzuführen sind. Im Winter ist ein Rückgang sowohl des Verkaufsvolumens als auch der verkauften Einheiten zu verzeichnen.
 - Preistrends: Die durchschnittlichen Preise schwanken im Laufe des Jahres, mit Tiefstständen in den Sommermonaten und Anstiegen in den kälteren Monaten. Diese Änderung spiegelt möglicherweise saisonale Veränderungen im Produktmix wider, wobei im Sommer günstigere Artikel wie T-Shirts und Shorts und im Winter teurere Artikel wie Pullover und Mäntel verkauft werden.
 - Allgemeiner Rückgang der Umsätze und Preise: Im zweiten Untersuchungszeitraum kommt es im Vergleich zum ersten Zeitraum zu einem allgemeinen Rückgang sowohl der Umsätze als auch der Durchschnittspreise. Dieser Rückgang kann durch eine Reihe von Faktoren verursacht werden, darunter Veränderungen im wirtschaftlichen Umfeld, im Marktwettbewerb sowie Veränderungen in den Vorlieben und im Verhalten der Verbraucher.
+- Die Analyse des Umsatzvolumens nach Produktbereichen zeigt, dass Frauen die Hauptkäufer sind. Die gefragtesten Produktkategorien sind Damenbekleidung (Ladieswear), junge Mode (Divided) und Unterwäsche sowie Strumpfhosen (Lingeries/Tights). Herrenbekleidung (Menswear) und Kinderbekleidung machen nur 5,5 % bzw. 2,7 % des Gesamtumsatzes aus, was auf ihren geringen Marktanteil und das Potenzial für Wachstum hinweist. Dies unterstreicht die Möglichkeit, das Sortiment in diesen Segmenten zu erweitern, um mehr Kunden anzuziehen und die Verkäufe in den unterrepräsentierten Kategorien zu steigern
 - Dynamik des Wachstums oder Rückgangs bestimmter Produkttypen: Zum Beispiel zeigten die Verkäufe von Kleidern (Dresses), die nach Hosen (Trousers) den zweiten Platz sowohl im Volumen als auch in der Anzahl der Verkäufe einnehmen, eine relative Stabilität, während die Verkäufe von Hosen erheblich fielen. Neben Kleidern zeigten auch die Produkte der Kategorien Top, Leggings/Tights und Skirt eine relative Stabilität, während in der Kategorie Blazer sogar ein Wachstum der Verkäufe zu verzeichnen war. Besondere Aufmerksamkeit sollte den Kategorien und Jahren gewidmet werden, in denen ein signifikantes Wachstum oder ein Rückgang der Verkäufe zu beobachten ist. Dies kann auf erfolgreiche oder erfolglose Änderungen im Sortiment oder in den Marketingaktionen hinweisen.
