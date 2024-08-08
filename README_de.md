@@ -645,6 +645,27 @@ Wesentliche Beobachtungen:
 
 ![VerkauftenEinheitenInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktIndexPlot.png)
 
+**Visualisierung der monatlichen Verkäufe nach Schlüsselproduktkategorien für zwei Perioden (September 2018 bis September 2019 und September 2019 bis September 2020)**
+
+Die folgenden Diagramme zeigen die monatlichen Verkäufe in Schlüsselproduktkategorien: Damenbekleidung (Ladieswear), Damenaccessoires (Ladies Accessories), Sportbekleidung (Sport), Divided (Jugendmode), Unterwäsche/Strumpfwaren (Lingeries/Tights) und Herrenbekleidung (Menswear).
+
+- **Damenbekleidung und Damenaccessoires:** Diese Kategorien zeigen ähnliche Trends, mit einem Anstieg der Verkäufe in den Monaten vor dem Jahresende des zweiten Zeitraums, gefolgt von einem Rückgang der Verkäufe in den ersten sieben Monaten des Jahres 2020.
+- **Sportbekleidung:** In dieser Kategorie ist ein Anstieg zu Beginn des Jahres zu verzeichnen, insbesondere von Januar bis März, was mit Neujahrsvorsätzen zum Sporttreiben zusammenhängen könnte. Ein zusätzlicher Anstieg der Verkäufe in den Sommermonaten könnte durch Marketingaktionen, Sortimentserneuerungen oder teilweise Aufhebung von Pandemiebeschränkungen bedingt sein.
+- **Unterwäsche/Strumpfwaren:** Diese Kategorie zeigt eine deutliche Saisonalität mit einem Verkaufshöhepunkt von April bis Juli, was auf eine erhöhte Nachfrage in der warmen Jahreszeit oder spezielle Aktionen hinweisen könnte.
+- **Herren- und Jugendbekleidung:** Zeigen fast durchgehend einen Rückgang der Verkäufe in allen Monaten des zweiten Zeitraums.
+
+![VerkaufssummeProMonatLadieswear](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Ladieswear.png)
+
+![VerkaufssummeProMonatDivided](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Divided.png)
+
+![VerkaufssummeProMonatLingeries_Tights](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Lingeries_Tights.png)
+
+![VerkaufssummeProMonatMenswear](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Menswear.png)
+
+![VerkaufssummeProMonatLadies_Accessories](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Ladies_Accessories.png)
+
+![VerkaufssummeProMonatSport](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeProMonatIndex%26Sport.png)
+
 **Verteilung der Preise nach Produkttypen in den drei Hauptbekleidungskategorien**
 
 Diese Visualisierung zeigt die Preisverteilung verschiedener Produkttypen in den drei größten Bekleidungskategorien: "Garment Full body", "Garment Lower body" und "Garment Upper body". Der Graph ermöglicht eine anschauliche Bewertung der Preisverteilung innerhalb jeder Kategorie und hebt teurere sowie zugänglichere Produkte hervor. Zum Beispiel zeigen "Coats" und "Jackets" eine breite Preisspanne, während Produkte wie "T-Shirts" und "Tops" eine kompaktere Verteilung aufweisen, was auf eine relativ stabile und erschwingliche Preiskategorie hinweist.
