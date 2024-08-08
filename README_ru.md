@@ -613,9 +613,9 @@ period2_transactions = df_transactions[(df_transactions['t_dat'] >= split_date1)
 
 ![КоличествоПроданныхЕдиницПоПериодамПоКатегориямТепл](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorien.png)
 
-![ОбъемПродажПоПериодамПоКатегориямПлот](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktkategorienPlot.png)
+![ОбъемПродажПоПериодамПоКатегориямПлот](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktIndexPlot.png)
 
-![КоличествоПроданныхЕдиницПоПериодамПоКатегориямПлот](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorienPlot.png)
+![КоличествоПроданныхЕдиницПоПериодамПоКатегориямПлот](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktIndexPlot.png)
 
 **Распределение цен по типам продуктов в трёх основных категориях одежды**
 
