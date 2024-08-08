@@ -602,18 +602,40 @@ Die Durchschnittspreise pro Monat zeigen ein relatives Absinken in den Sommermon
 
 ![DurchschnittspreiseProMonatFürZweiPerioden](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/DurchschnittsPreisProMonatPlot.png)
 
-**Verteilung der Preise nach Produkttypen in den drei Hauptbekleidungskategorien**
-
-Diese Visualisierung zeigt die Preisverteilung verschiedener Produkttypen in den drei größten Bekleidungskategorien: "Garment Full body", "Garment Lower body" und "Garment Upper body". Der Graph ermöglicht eine anschauliche Bewertung der Preisverteilung innerhalb jeder Kategorie und hebt teurere sowie zugänglichere Produkte hervor. Zum Beispiel zeigen "Coats" und "Jackets" eine breite Preisspanne, während Produkte wie "T-Shirts" und "Tops" eine kompaktere Verteilung aufweisen, was auf eine relativ stabile und erschwingliche Preiskategorie hinweist.
-
-![VerteilungDerPreiseNachProdukttypen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseInDreiProduktgruppen%20(1).png)
-
 **Verteilung der Preise nach verschiedenen Produktkategorien**
 
 Diese Diagramm hilft zu verstehen, welche Segmente höhere oder niedrigere Preise bieten und welche eine größere Variabilität in der Preisgestaltung aufweisen. Zum Beispiel ist die Preisspanne in der Kategorie der Kinderbekleidung relativ klein. Dies deutet auf eine stabilere und vorhersehbare Preisgestaltung hin, was ein wichtiger Faktor für Eltern ist, die Bekleidung für ihre Kinder planen.
 In der Kategorie Damenbekleidung (Ladieswear) sehen wir eine deutlich größere Preisspanne sowie viele Ausreißer, was auf eine hohe Variabilität in der Preisgestaltung hindeutet. Dies könnte mit einem breiteren Sortiment an Produkten zusammenhängen, das sowohl erschwinglichere Alltagsartikel als auch exklusive oder Premium-Modelle umfasst. Die hohe Preisspanne und zahlreichen Ausreißer bei den Preisen zeigen, dass die Käufer aus einer breiten Produktpalette wählen können, abhängig von ihren Bedürfnissen und ihrem Budget.
 
 ![VerteilungDerPreiseNachProduktkategorien](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseNachProduktkategorien.png)
+
+**Visualisierungen des Verkaufsvolumens und der verkauften Einheiten nach Produktkategorien für zwei Perioden (September 2018 – September 2019 und September 2019 – September 2020**
+
+Diese Visualisierungen zeigen das Verkaufsvolumen und die Anzahl der verkauften Einheiten für verschiedene Produktkategorien von H&M im Zeitraum von September 2018 bis September 2020. Sie ermöglichen es uns zu erkennen, welche Kategorien den größten Beitrag zum Gesamtumsatz des Unternehmens leisten.
+
+Wesentliche Beobachtungen:
+
+- **Dominanz der Damenbekleidung:** Die Kategorie 'Damenbekleidung' (Ladieswear) zeigte das höchste Verkaufsvolumen, was auf eine hohe Nachfrage in diesem Segment hinweist. Gefolgt wird sie von der Kategorie 'Divided', die auf den Jugendmarkt ausgerichtet ist, und 'Lingeries/Tights' (Unterwäsche und Strumpfhosen), was ein stetiges Interesse an diesen Produkten zeigt.
+
+- **Potenzial für Wachstum in anderen Kategorien:** Trotz des Erfolgs der Damenbekleidung besteht Potenzial für Wachstum in den Bereichen Herren- und Kinderbekleidung. Die Visualisierungen zeigen, dass diese Kategorien geringere Verkaufsvolumen aufweisen, was ein Ziel für zukünftige Marketing- und Produktstrategien sein könnte.
+
+- **Rückgang bei Kinderbekleidung:** Besonders auffällig ist der starke Rückgang der Verkäufe in der Kategorie Kinderbekleidung im zweiten Zeitraum, was auf die Notwendigkeit hinweist, Angebote und Ansätze in diesem Segment zu überdenken.
+
+- **Ausnahme im Bereich Sportbekleidung:** Die einzige Kategorie, die Wachstum zeigte, war 'Sport' (Sportbekleidung), was das veränderte Verbraucherverhalten und das wachsende Interesse an einem gesunden Lebensstil hervorhebt.
+
+![VerkaufssummeInProduktkategorienNachPeriodenWarm](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktkategorien.png)
+
+![VerkauftenEinheitenInProduktkategorienNachPeriodenWarm](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorien.png)
+
+![VerkaufssummeInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktkategorienPlot.png)
+
+![VerkauftenEinheitenInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorienPlot.png)
+
+**Verteilung der Preise nach Produkttypen in den drei Hauptbekleidungskategorien**
+
+Diese Visualisierung zeigt die Preisverteilung verschiedener Produkttypen in den drei größten Bekleidungskategorien: "Garment Full body", "Garment Lower body" und "Garment Upper body". Der Graph ermöglicht eine anschauliche Bewertung der Preisverteilung innerhalb jeder Kategorie und hebt teurere sowie zugänglichere Produkte hervor. Zum Beispiel zeigen "Coats" und "Jackets" eine breite Preisspanne, während Produkte wie "T-Shirts" und "Tops" eine kompaktere Verteilung aufweisen, was auf eine relativ stabile und erschwingliche Preiskategorie hinweist.
+
+![VerteilungDerPreiseNachProdukttypen](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/PreiseInDreiProduktgruppen%20(1).png)
 
 **Wärmekarten der Verkaufsvolumen und verkauften Einheiten in den drei Hauptbekleidungskategorien über zwei Perioden (September 2018 – September 2019 und September 2019 – September 2020)**
 
