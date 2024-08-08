@@ -641,9 +641,9 @@ Wesentliche Beobachtungen:
 
 ![VerkauftenEinheitenInProduktkategorienNachPeriodenWarm](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorien.png)
 
-![VerkaufssummeInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktkategorienPlot.png)
+![VerkaufssummeInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkaufssummeInProduktIndexPlot.png)
 
-![VerkauftenEinheitenInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktkategorienPlot.png)
+![VerkauftenEinheitenInProduktkategorienNachPeriodenPlot](https://github.com/OlhaAD/EDA_IDA_H_and_M_Python/blob/main/visualizations/VerkauftenEinheitenInProduktIndexPlot.png)
 
 **Verteilung der Preise nach Produkttypen in den drei Hauptbekleidungskategorien**
 
