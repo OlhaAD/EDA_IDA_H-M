@@ -129,46 +129,37 @@ Der DataFrame **df_articles** erfordert die folgende Optimierung:
 
 1. **Umwandlung der Spalte `article_id` in `int32`:**
     - Reduzierung des Speicherplatzbedarfs durch Verwendung eines 32-Bit-Ganzzahltyps anstelle eines 64-Bit-Typs. Dies spart Speicherplatz bei der Speicherung von Ganzzahldaten. Der minimale Wert von article_id beträgt 108 775 015 und der maximale Wert 959 461 001, was innerhalb des Bereichs von int32 (-2 147 483 648 bis 2 147 483 647) liegt.
-
-2. **Umwandlung aller zehn stringbasierten Spalten prod_name, `prod_name`, `product_type_name`, `product_group_name`, `graphical_appearance_name`, `colour_group_name`, `index_name`, `index_group_name`, `section_name`, `garment_group_name`, `detail_desc` von `object` in `category`:**
-    - Spalten mit Textwerten können viel Speicherplatz beanspruchen. Wenn die Spalten wie in unserem Fall wiederholte Werte enthalten, ist es besser, sie in kategorische Daten umzuwandeln, um den Speicherplatzbedarf zu verringern.
    
-Diese Umwandlungen haben den Speicherplatzbedarf des DataFrames `df_article` von **8,9 MB** vor der Optimierung auf **4,8 MB** nach der Optimierung reduziert. Dies wird die Leistung bei der Arbeit mit diesem DataFrame erheblich verbessern.
+Diese Umwandlungen haben den Speicherplatzbedarf des DataFrames `df_article` von **8,9 MB** vor der Optimierung auf **8,5 MB** nach der Optimierung reduziert.
 
 Der DataFrame **df_customers** erfordert die folgende Optimierung:
 
 1. **Umwandlung der Spalte `Active` von `float64` in `bool`:**
     - Wir haben festgestellt, dass `Active` nur einen Wert von 1 annimmt, während die meisten anderen Werte NaN sind. Daher ist die Umwandlung dieser Spalte von float64 in bool gerechtfertigt und ermöglicht eine erhebliche Optimierung unserer Daten.
 
-2. **Umwandlung der Spalte `customer_id` von `object` in den kategorialen Datentyp (`category`):**
-    - Diese Umwandlung ist erforderlich, um unsere Daten mit df_transactions zu synchronisieren, in dem die customer_id in den kategorialen Datentyp umgewandelt wurde, um den Speicherbedarf erheblich zu reduzieren.
-
-3. **Umwandlung der Spalten `club_member_status` und `fashion_news_frequency` von `object` in den kategorialen Datentyp (`category`):**
+2. **Umwandlung der Spalten `club_member_status` und `fashion_news_frequency` von `object` in den kategorialen Datentyp (`category`):**
     - Beide Spalten nehmen eine begrenzte Anzahl von Werten an, nämlich jeweils 3. `fashion_news_frequency` kann die Werte 'NONE', 'Regularly', 'Monthly' und `club_member_status` die Werte 'ACTIVE', 'PRE-CREATE', 'LEFT CLUB' haben. Daher ist die Umwandlung von object in diesem Fall notwendig.
 
-4. **Umwandlung der Spalte `age` von `float64` in `uint8`:**
+3. **Umwandlung der Spalte `age` von `float64` in `uint8`:**
     - Die Spalte `age` nimmt Werte von 0 bis 99 an, daher ist die Umwandlung in den Datentyp uint8, der Werte im Bereich von 0 bis 255 verwendet, sinnvoll.
 
-Der Vergleich verschiedener Optimierungsansätze zeigte, dass die Umwandlung aller stringbasierten Spalten in kategoriale Daten (category) nicht immer zu einer erheblichen Verringerung des Speicherbedarfs führt. Manchmal kann die Verwendung von object für einige Spalten effizienter sein, und deshalb wurde der Datentyp der Spalte `postal_code` nicht geändert, da die Verwendung des object-Typs in diesem Fall optimal war. Insgesamt haben die Umwandlungen dazu geführt, dass der Speicherbedarf des DataFrame df_customers von **62.8 MB** vor der Optimierung auf **63.7 MB** nach der Optimierung gestiegen ist. Dieser Eindruck mag oberflächlich erscheinen: Erstens blieb der Speicherbedarf nahezu gleich, aber die neuen Datentypen ermöglichen eine effizientere Datenverarbeitung. Zweitens war der Hauptgrund für den Anstieg des Speicherbedarfs die Umwandlung von customer_id in den kategorialen Datentyp, was zur Synchronisation der Datentypen mit df_transactions notwendig war, in dem diese Umwandlung unvermeidlich war.
+Durch diese Transformationen konnten wir die von DataFrame „df_customers“ verwendete Speichermenge erheblich reduzieren, von **62,8 MB** vor der Optimierung auf **26,2 MB** nach der Optimierung.
 
 Der DataFrame **df_transactions** stellt ein sehr großes Informationsvolumen dar und erfordert daher die folgende zusätzliche Optimierung:
 
 1. **Umwandlung der Spalte `t_dat` in `datetime64[ns]`:**
     - Speicherersparnis durch die Verwendung eines effizienteren Formats für Datumsangaben, das das Speichervolumen im Vergleich zum Typ object reduziert.
 
-2. **Umwandlung der Spalte `customer_id` in den kategorialen Datentyp (`category`):**
-    - Erhebliche Speicherreduktion, da kategoriale Daten in Form von Codes anstelle von Zeichenfolgen gespeichert werden, was den erforderlichen Speicherplatz für die Speicherung von Zeichenfolgendaten erheblich reduziert. Die Anzahl der eindeutigen Werte in customer_id beträgt 1 362 281 bei einer Gesamtanzahl von 31 788 324 Einträgen, was darauf hinweist, dass die Umwandlung der Spalte in einen kategorialen Datentyp nützlich sein kann, um den Speicherbedarf zu reduzieren.
-
-3. **Umwandlung der Spalte `article_id` in `int32`:**
+2. **Umwandlung der Spalte `article_id` in `int32`:**
     - Speicherreduktion durch die Verwendung von 32-Bit-Ganzzahlen anstelle von 64-Bit-Ganzzahlen. Dies spart Speicherplatz bei der Speicherung von ganzzahligen Daten. Der minimale Wert von article_id beträgt 108 775 015 und der maximale Wert 956 217 002, was innerhalb des Bereichs von int32 (-2 147 483 648 bis 2 147 483 647) liegt.
 
-4. **Umwandlung der Spalte `price` in `float32`:**
+3. **Umwandlung der Spalte `price` in `float32`:**
     - Speicherreduktion durch die Verwendung von 32-Bit-Gleitkommazahlen anstelle von 64-Bit-Gleitkommazahlen. Dies ist besonders nützlich für numerische Daten, bei denen keine hohe Genauigkeit erforderlich ist.
 
-5. **Umwandlung der Spalte `sales_channel_id` in `int8`:**
+4. **Umwandlung der Spalte `sales_channel_id` in `int8`:**
     - Minimierung des Speicherbedarfs für diese Spalte durch die Verwendung von 8-Bit-Ganzzahlen. Da es in der Spalte sales_channel_id nur zwei eindeutige Werte (1 und 2) gibt, ist diese Umwandlung effektiv.
 
-Diese Umwandlungen haben den Speicherbedarf des DataFrame df_transactions erheblich reduziert, von **1,2 GB** vor der Optimierung auf **679,3 MB** nach der Optimierung, was die Gesamtleistung des Systems bei der Arbeit mit großen Datenmengen verbessert.
+Diese Umwandlungen haben den Speicherbedarf des DataFrame df_transactions erheblich reduziert, von **1,2 GB** vor der Optimierung auf **757.9 MB** nach der Optimierung, was die Gesamtleistung des Systems bei der Arbeit mit großen Datenmengen verbessert.
 
 **Datenbeispiele**
 Produktgruppen:
